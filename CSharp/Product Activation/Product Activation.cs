@@ -20,7 +20,7 @@ namespace Sample
         /// PDF .Net activation.
         /// </summary>
         /// <remarks>
-        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/product-activation.php
+        /// Details: https://sautinsoft.com/products/pdf/help/net/getting-started/product-activation.php
         /// </remarks>
         static void ProductActivation()
         {
