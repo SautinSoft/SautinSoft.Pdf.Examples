@@ -14,19 +14,32 @@ PDF .Net allows developers to insert tables, graphs, images, hyperlinks, custom 
 
 ## Top Features
 ===============================
-Merge, split, and create PDF files. 
-Convert PDF files to image, such as PNG, JPEG, GIF, BMP, TIFF.
-Extract a Unicode representation of a PDF page and individual text elements with their bounds and font. 
-View PDF files in WPF applications. 
-Annotate PDF pages with hyperlinks. 
-Fill in, flatten, read, and export interactive forms. 
-Read, write, and update PDF files. 
-Get, create, or edit bookmarks (outlines) and document properties. 
-Extract images from PDF files and OCR text from scanned PDFs.
-Add text, images, shapes (paths), form XObjects, content groups, marked content, and format (fill, stroke) to pages.and clip) the content. 
-Encrypt and digitally sign PDF files. Clone or import pages between PDF documents.
-Add watermarks, headers, footers, and viewer preferences to PDF pages. 
-Get, create, remove, or reorder pages. 
+
++ Merge, split, and create PDF files. 
+
++ Convert PDF files to image, such as PNG, JPEG, GIF, BMP, TIFF.
+
++ Extract a Unicode representation of a PDF page and individual text elements with their bounds and font. 
+
++ View PDF files in WPF applications. 
+
++ Annotate PDF pages with hyperlinks. 
+
++ Fill in, flatten, read, and export interactive forms. 
+
++ Read, write, and update PDF files. 
+
++ Get, create, or edit bookmarks (outlines) and document properties. 
+
++ Extract images from PDF files and OCR text from scanned PDFs.
+
++ Add text, images, shapes (paths), form XObjects, content groups, marked content, and format (fill, stroke) to pages.and clip) the content. 
+
++ Encrypt and digitally sign PDF files. Clone or import pages between PDF documents.
+
++ Add watermarks, headers, footers, and viewer preferences to PDF pages. 
+
++ Get, create, remove, or reorder pages. 
 
 Code samples right here: https://github.com/SautinSoft/SautinSoft.Pdf.Examples
 
