@@ -9,6 +9,12 @@ namespace Sample
 {
     class Sample
     {
+        /// <summary>
+        /// Header and Footer.
+        /// </summary>
+        /// <remarks>
+        /// Details: http://sautinsoft/products/pdf/help/net/developer-guide/header-footer.php
+        /// </remarks>
         static void Main(string[] args)
         {
             string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");

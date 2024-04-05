@@ -8,6 +8,12 @@ namespace Sample
 {
     class Sample
     {
+        /// <summary>
+        /// Clone or import pages between PDF documents.
+        /// </summary>
+        /// <remarks>
+        /// Details: http://sautinsoft/products/pdf/help/net/developer-guide/clone-or-import-pages.php
+        /// </remarks>
         static void Main(string[] args)
         {
             string invoice = Path.GetFullPath(@"..\..\..\invoice.pdf"); 

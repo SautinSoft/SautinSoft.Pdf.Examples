@@ -8,6 +8,12 @@ namespace Sample
 {
     class Sample
     {
+        /// <summary>
+        /// Create PDF interactive form fields.
+        /// </summary>
+        /// <remarks>
+        /// Details: http://sautinsoft/products/pdf/help/net/developer-guide/create-interactive-form.php
+        /// </remarks>
         static void Main(string[] args)
         {
             using (var document = new PdfDocument())

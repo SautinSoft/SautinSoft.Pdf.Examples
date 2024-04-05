@@ -8,6 +8,12 @@ namespace Sample
 {
     class Sample
     {
+        /// <summary>
+        /// Get and set PDF viewer preferences.
+        /// </summary>
+        /// <remarks>
+        /// Details: http://sautinsoft/products/pdf/help/net/developer-guide/viewer-preferences.php
+        /// </remarks>
         static void Main(string[] args)
         {
             string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");

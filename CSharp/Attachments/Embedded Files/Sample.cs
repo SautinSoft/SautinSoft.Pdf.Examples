@@ -9,6 +9,12 @@ namespace Sample
 {
     class Sample
     {
+        /// <summary>
+        /// Embed files to PDF document.
+        /// </summary>
+        /// <remarks>
+        /// Details: http://sautinsoft/products/pdf/help/net/developer-guide/embed-files-to-pdf-document.php
+        /// </remarks>
         static void Main(string[] args)
         {
             string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");

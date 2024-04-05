@@ -8,6 +8,12 @@ namespace Sample
 {
     class Sample
     {
+        /// <summary>
+        /// Get and set document properties.
+        /// </summary>
+        /// <remarks>
+        /// Details: http://sautinsoft/products/pdf/help/net/developer-guide/document-properties-pdf.php
+        /// </remarks>
         static void Main(string[] args)
         {
             string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");

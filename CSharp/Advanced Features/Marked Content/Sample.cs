@@ -10,6 +10,12 @@ namespace Sample
 {
     class Sample
     {
+        /// <summary>
+        /// Create PDF marked content.
+        /// </summary>
+        /// <remarks>
+        /// Details: http://sautinsoft/products/pdf/help/net/developer-guide/marked-content.php
+        /// </remarks>
         static void Main(string[] args)
         {
            

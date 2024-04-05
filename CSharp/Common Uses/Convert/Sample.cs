@@ -9,6 +9,12 @@ namespace Sample
 {
     class Sample
     {
+        /// <summary>
+        /// Convert Images to PDF.
+        /// </summary>
+        /// <remarks>
+        /// Details: http://sautinsoft/products/pdf/help/net/developer-guide/convert-images-to-pdf.php
+        /// </remarks>
         static void Main(string[] args)
         {
 

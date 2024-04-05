@@ -8,6 +8,12 @@ namespace Sample
 {
     class Sample
     {
+        /// <summary>
+        /// Add hyperlinks to PDF files.
+        /// </summary>
+        /// <remarks>
+        /// Details: http://sautinsoft/products/pdf/help/net/developer-guide/hyperlinks.php
+        /// </remarks>
         static void Main(string[] args)
         {
             string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");

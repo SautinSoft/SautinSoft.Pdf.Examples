@@ -11,6 +11,12 @@ namespace Sample
 {
     class Sample
     {
+        /// <summary>
+        /// Create PDF Portfolios.
+        /// </summary>
+        /// <remarks>
+        /// Details: http://sautinsoft/products/pdf/help/net/developer-guide/create-pdf-portfolios.php
+        /// </remarks>
         static void Main(string[] args)
         {
             string pdfFile = Path.GetFullPath(@"..\..\..\PortfolioTemplate.pdf");

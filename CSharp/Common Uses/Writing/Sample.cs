@@ -8,6 +8,12 @@ namespace Sample
 {
     class Sample
     {
+        /// <summary>
+        /// Create and write PDF files.
+        /// </summary>
+        /// <remarks>
+        /// Details: http://sautinsoft/products/pdf/help/net/developer-guide/create-and-write-pdf-files.php
+        /// </remarks>
         static void Main(string[] args)
         {
             using (var document = new PdfDocument())

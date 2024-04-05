@@ -10,7 +10,13 @@ namespace Sample
     {
         static void Main(string[] args)
         {
-                        using (var document = new PdfDocument())
+        /// <summary>
+        /// Manipulate PDF content streams and resources.
+        /// </summary>
+        /// <remarks>
+        /// Details: http://sautinsoft/products/pdf/help/net/developer-guide/content-streams-resources.php
+        /// </remarks>
+            using (var document = new PdfDocument())
             {
                 using (var formattedText = new PdfFormattedText())
                 {

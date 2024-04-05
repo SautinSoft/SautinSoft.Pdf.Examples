@@ -11,6 +11,12 @@ namespace Sample
 {
     class Sample
     {
+        /// <summary>
+        /// Use basic PDF objects for currently unsupported PDF features.
+        /// </summary>
+        /// <remarks>
+        /// Details: http://sautinsoft/products/pdf/help/net/developer-guide/basic-objects.php
+        /// </remarks>
         static void Main(string[] args)
         {
             string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");

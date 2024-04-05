@@ -8,6 +8,12 @@ namespace Sample
 {
     class Sample
     {
+        /// <summary>
+        /// Formatting PDF content.
+        /// </summary>
+        /// <remarks>
+        /// Details: http://sautinsoft/products/pdf/help/net/developer-guide/formatting-pdf-content.php
+        /// </remarks>
         static void Main(string[] args)
         {
             

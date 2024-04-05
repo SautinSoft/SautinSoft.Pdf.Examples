@@ -11,6 +11,12 @@ namespace Sample
 {
     class Sample
     {
+        /// <summary>
+        /// Read PDF interactive form fields.
+        /// </summary>
+        /// <remarks>
+        /// Details: http://sautinsoft/products/pdf/help/net/developer-guide/read-interactive-form.php
+        /// </remarks>
         static void Main(string[] args)
         {
             string pdfFile = Path.GetFullPath(@"..\..\..\FormFilled.pdf");

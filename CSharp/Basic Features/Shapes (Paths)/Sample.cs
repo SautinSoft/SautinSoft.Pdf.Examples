@@ -8,6 +8,12 @@ namespace Sample
 {
     class Sample
     {
+        /// <summary>
+        /// Add shapes to PDF files.
+        /// </summary>
+        /// <remarks>
+        /// Details: http://sautinsoft/products/pdf/help/net/developer-guide/add-shapes-to-pdf.php
+        /// </remarks>
         static void Main(string[] args)
         {
             

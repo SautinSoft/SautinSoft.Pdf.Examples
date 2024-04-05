@@ -11,6 +11,12 @@ namespace Sample
 {
     class Sample
     {
+        /// <summary>
+        /// Split PDF files.
+        /// </summary>
+        /// <remarks>
+        /// Details: http://sautinsoft/products/pdf/help/net/developer-guide/split-pdf-files.php
+        /// </remarks>
         static void Main(string[] args)
         {
             // Open a source PDF file and create a destination ZIP file.

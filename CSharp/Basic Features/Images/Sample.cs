@@ -9,6 +9,12 @@ namespace Sample
 {
     class Sample
     {
+        /// <summary>
+        /// Export and import images to PDF file.
+        /// </summary>
+        /// <remarks>
+        /// Details: http://sautinsoft/products/pdf/help/net/developer-guide/export-import-images-to-pdf.php
+        /// </remarks>
         static void Main(string[] args)
         {
             string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");

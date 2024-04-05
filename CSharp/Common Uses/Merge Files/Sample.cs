@@ -8,6 +8,12 @@ namespace Sample
 {
     class Sample
     {
+        /// <summary>
+        /// Merge PDF files.
+        /// </summary>
+        /// <remarks>
+        /// Details: http://sautinsoft/products/pdf/help/net/developer-guide/merge-pdf-files.php
+        /// </remarks>
         static void Main(string[] args)
         {
             MergePdf();
