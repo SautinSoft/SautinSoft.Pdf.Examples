@@ -16,34 +16,36 @@ namespace Sample
         /// </remarks>
         static void Main(string[] args)
         {
+            // Before starting this example, please get a free 30-day trial key:
+            // https://sautinsoft.com/start-for-free/
+
+            // Apply the key here:
+            // PdfDocument.SetLicense("...");
+
             MergePdf();
         }
-       
+
         static void MergePdf()
         {
             string[] inpFiles = new string[] {
-                        Path.GetFullPath(@"d:\Work\SDK\Products\PDF .Net\GitHub\Code samples\CSharp\Common Uses\-Merge Files\MergeFile01.pdf" ),
-                        Path.GetFullPath(@"d:\Work\SDK\Products\PDF .Net\GitHub\Code samples\CSharp\Common Uses\-Merge Files\MergeFile02.pdf" ),
-                        Path.GetFullPath(@"d:\Work\SDK\Products\PDF .Net\GitHub\Code samples\CSharp\Common Uses\-Merge Files\MergeFile03.pdf" )};
+                        Path.GetFullPath(@"..\..\..\Simple Text.pdf"),
+                        Path.GetFullPath(@"..\..\..\Potato Beetle.pdf"),
+                        Path.GetFullPath(@"..\..\..\Text and Graphics.pdf")};
 
             string outFile = Path.GetFullPath(@"Merged.pdf");
 
+            // Create a new PDF document.
             using (var pdf = new PdfDocument())
             {
-                // Merge multiple PDF files into single PDF.
+                // Merge multiple PDF documents the new single PDF.
                 foreach (var inpFile in inpFiles)
-                {
                     using (var source = PdfDocument.Load(inpFile))
-                    {
-                        foreach (var page in source.Pages)
-                            pdf.Pages.AddClone(page);
-                    }
-                }
+                        pdf.Pages.Kids.AddClone(source.Pages);
+
                 pdf.Save(outFile);
             }
-            // Show the result PDF document.
+            // Show the result.
             System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(outFile) { UseShellExecute = true });
         }
-
     }
 }
