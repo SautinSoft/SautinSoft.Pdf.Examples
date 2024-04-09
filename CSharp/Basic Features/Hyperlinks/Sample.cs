@@ -16,6 +16,12 @@ namespace Sample
         /// </remarks>
         static void Main(string[] args)
         {
+            // Before starting this example, please get a free 30-day trial key:
+            // https://sautinsoft.com/start-for-free/
+
+            // Apply the key here:
+            // PdfDocument.SetLicense("...");
+
             string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");
 
             using (var document = new PdfDocument())
@@ -34,7 +40,7 @@ namespace Sample
                     var origin = new PdfPoint((pageWidth - formattedText.Width) / 2, y);
                     page.Content.DrawText(formattedText, origin);
 
-                    var image = PdfImage.Load("SautinSoft.png");
+                    var image = PdfImage.Load("..\\..\\..\\SautinSoft.png");
                     y -= image.Size.Height + 100;
                     origin = new PdfPoint((pageWidth - image.Size.Width) / 2, y);
                     page.Content.DrawImage(image, origin);

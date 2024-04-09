@@ -19,8 +19,14 @@ namespace Sample
         /// </remarks>
         static void Main(string[] args)
         {
+            // Before starting this example, please get a free 30-day trial key:
+            // https://sautinsoft.com/start-for-free/
+
+            // Apply the key here:
+            // PdfDocument.SetLicense("...");
+
             // Open a source PDF file and create a destination ZIP file.
-            using (var source = PdfDocument.Load(@"..\..\..\simple text.pdf"))
+            using (var source = PdfDocument.Load(Path.GetFullPath(@"..\..\..\simple text.pdf")))
             using (var archiveStream = File.OpenWrite("Output.zip"))
             using (var archive = new ZipArchive(archiveStream, ZipArchiveMode.Create))
             {

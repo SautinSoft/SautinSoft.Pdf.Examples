@@ -19,6 +19,12 @@ namespace Sample
         /// </remarks>
         static void Main(string[] args)
         {
+            // Before starting this example, please get a free 30-day trial key:
+            // https://sautinsoft.com/start-for-free/
+
+            // Apply the key here:
+            // PdfDocument.SetLicense("...");
+
             string pdfFile = Path.GetFullPath(@"..\..\..\FormFilled.pdf");
 
             var writer = new StringWriter(CultureInfo.InvariantCulture);

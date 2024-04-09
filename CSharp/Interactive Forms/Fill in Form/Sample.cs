@@ -16,7 +16,13 @@ namespace Sample
         /// </remarks>
         static void Main(string[] args)
         {
-            string pdfFile = Path.GetFullPath(@"..\..\..\form.pdf");
+            // Before starting this example, please get a free 30-day trial key:
+            // https://sautinsoft.com/start-for-free/
+
+            // Apply the key here:
+            // PdfDocument.SetLicense("...");
+
+            string pdfFile = Path.GetFullPath(@"..\..\..\Form.pdf");
 
             using (var document = PdfDocument.Load(pdfFile))
             {

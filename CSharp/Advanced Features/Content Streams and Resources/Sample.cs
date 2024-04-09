@@ -8,14 +8,20 @@ namespace Sample
 {
     class Sample
     {
-        static void Main(string[] args)
-        {
         /// <summary>
         /// Manipulate PDF content streams and resources.
         /// </summary>
         /// <remarks>
         /// Details: http://sautinsoft/products/pdf/help/net/developer-guide/content-streams-resources.php
         /// </remarks>
+        static void Main(string[] args)
+        {
+            // Before starting this example, please get a free 30-day trial key:
+            // https://sautinsoft.com/start-for-free/
+
+            // Apply the key here:
+            // PdfDocument.SetLicense("...");
+
             using (var document = new PdfDocument())
             {
                 using (var formattedText = new PdfFormattedText())
