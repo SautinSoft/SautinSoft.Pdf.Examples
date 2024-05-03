@@ -6,6 +6,7 @@
     <RootNamespace>Reading_text_from_a_specific_rectangular_area</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	<LangVersion>latest</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>

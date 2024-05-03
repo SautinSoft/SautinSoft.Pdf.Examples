@@ -4,6 +4,7 @@
   <Authors>Max Sautin</Authors>
   <Company>SautinSoft</Company>
   <OutputType>Exe</OutputType>
+  <LangVersion>latest</LangVersion>
   <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
    <ItemGroup>
