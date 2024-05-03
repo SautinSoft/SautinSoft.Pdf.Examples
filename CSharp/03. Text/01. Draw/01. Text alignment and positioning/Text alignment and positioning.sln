@@ -1,0 +1,25 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Text alignment and positioning", "Text alignment and positioning.csproj", "{BB6AF027-B9CA-4D8C-B460-005AD6E4AD51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB6AF027-B9CA-4D8C-B460-005AD6E4AD51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB6AF027-B9CA-4D8C-B460-005AD6E4AD51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB6AF027-B9CA-4D8C-B460-005AD6E4AD51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB6AF027-B9CA-4D8C-B460-005AD6E4AD51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B4894C1-771B-4E25-B65A-86467ED9817D}
+	EndGlobalSection
+EndGlobal
