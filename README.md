@@ -60,7 +60,6 @@ Code samples right here: https://github.com/SautinSoft/SautinSoft.Pdf.Examples
 
 ## Platforms:
 ===============================
-* .NET Framework 4.7.2. and higher
 * .NET 5 and higher
 * .Net Core
 
@@ -143,7 +142,10 @@ PDF .Net totally simplifies the development of .NET applications where require t
 If you need any help with code samples, API, prices or another issues, please use our WebChat, Skype, Email, Phones:
 
 +46 855924509 (Support)
+
 +46 812111486 (Sales)
+
 Skype: sautinsoft.support
+
 Email: support@sautinsoft.com
 
