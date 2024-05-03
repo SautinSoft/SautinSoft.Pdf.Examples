@@ -18,7 +18,7 @@ namespace Sample
             {
                 var page = document.Pages[0];
                 var pageContent = page.Content;
-                var texts = pageContent.GetText().Find("Island");
+                var texts = pageContent.GetText().Find("Island").ToList();
 
                 foreach (var text in texts)
                 {
