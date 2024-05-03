@@ -1,33 +1,20 @@
-<Project Sdk="Microsoft.NET.Sdk">
+  <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-  <PackageId>PDF Document .Net</PackageId>
+  <PackageId>PDF .Net</PackageId>
   <Authors>Max Sautin</Authors>
   <Company>SautinSoft</Company>
   <OutputType>Exe</OutputType>
-  <TargetFramework>net7.0</TargetFramework>
+  <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
- <Choose>
- <!-- Need to conditionally bring in references for the .NET 6.0 target -->
-  <When Condition="Exists('..\..\..\..\Bin\.NET 6.0\SautinSoft.Pdf.dll')">
-   <ItemGroup>
-    <Reference Include="SautinSoft.Pdf">
-    <HintPath>..\..\..\..\Bin\.NET 6.0\SautinSoft.Pdf.dll</HintPath>
-    </Reference>
-	<PackageReference Include="System.Drawing.Common" Version="4.7.0" />
-    <PackageReference Include="System.IO.Packaging" Version="4.4.0" />
-	<PackageReference Include="System.Text.Encoding.CodePages" Version="4.5.0" />
-    <PackageReference Include="System.Xml.XPath.XmlDocument" Version="4.3.0" />
-	<PackageReference Include="SkiaSharp" Version="2.88.3" />
-    <PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />
-	<PackageReference Include="Pkcs11Interop" Version="5.1.2" />
- 
-	</ItemGroup>
-  </When>
-    <!-- Need to conditionally bring in references for the NuGet target -->
-  <When Condition="'Nuget'=='Nuget'">
    <ItemGroup>
     <PackageReference Include="SautinSoft.Pdf" Version="*" />
+    <PackageReference Include="Pkcs11Interop" Version="5.1.2" />
+    <PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />
+    <PackageReference Include="SkiaSharp" Version="2.88.6" />
+    <PackageReference Include="SkiaSharp.HarfBuzz" Version="2.88.6" />
+    <PackageReference Include="Svg.Skia" Version="1.0.0.3" />
+    <PackageReference Include="System.IO.Packaging" Version="4.4.0" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.5.0" />
+    <PackageReference Include="System.Xml.XPath.XmlDocument" Version="4.3.0" />
    </ItemGroup>
-  </When>
- </Choose>
-</Project>
+  </Project>
