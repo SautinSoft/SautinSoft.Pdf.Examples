@@ -4,14 +4,14 @@ using System.IO;
 
 class Program
 {
+    /// <summary>
+    /// Fill in PDF interactive forms.
+    /// </summary>
+    /// <remarks>
+    /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/password-protection.php
+    /// </remarks>
     static void Main()
     {
-        /// <summary>
-        /// Fill in PDF interactive forms.
-        /// </summary>
-        /// <remarks>
-        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/password-protection.php
-        /// </remarks>
         // This property is necessary only for licensed version.
         //SautinSoft.Pdf.Serial = "XXXXXXXXXXX";
 

@@ -5,14 +5,14 @@ using SautinSoft.Pdf.Content;
 
 class Program
 {
-    static void Main()
-    {
     /// <summary>
     /// Add shapes to PDF files.
     /// </summary>
     /// <remarks>
     /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/draw-images-to-pdf.php
     /// </remarks>
+    static void Main()
+    {
         // Before starting this example, please get a free 30-day trial key:
         // https://sautinsoft.com/start-for-free/
 

@@ -9,13 +9,11 @@ namespace Sample
 {
     class Sample
     {
-
+        /// <remarks>
+        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/save-pdf.php
+        /// </remarks>
         static void Main(string[] args)
         {
-            /// <remarks>
-            /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/save-pdf.php
-            /// </remarks>
-
             // Before starting this example, please get a free 30-day trial key:
             // https://sautinsoft.com/start-for-free/
 

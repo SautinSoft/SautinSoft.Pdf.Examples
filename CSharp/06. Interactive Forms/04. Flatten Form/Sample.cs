@@ -9,14 +9,14 @@ namespace Sample
 {
     class Sample
     {
-        static void Main(string[] args)
-        {
         /// <summary>
         /// Fill in PDF interactive forms.
         /// </summary>
         /// <remarks>
         /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/fltten-interactive-forms.php
         /// </remarks>
+        static void Main(string[] args)
+        {
             // Before starting this example, please get a free 30-day trial key:
             // https://sautinsoft.com/start-for-free/
 

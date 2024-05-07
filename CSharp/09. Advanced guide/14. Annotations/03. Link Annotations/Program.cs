@@ -6,14 +6,14 @@ using SautinSoft.Pdf.Annotations;
 
 class Program
 {
+    /// <summary>
+    /// Watermarks.
+    /// </summary>
+    /// <remarks>
+    /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/link-annotations.php
+    /// </remarks>
     static void Main()
     {
-         /// <summary>
-         /// Watermarks.
-         /// </summary>
-         /// <remarks>
-         /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/link-annotations.php
-         /// </remarks>
         // Before starting this example, please get a free 30-day trial key:
         // https://sautinsoft.com/start-for-free/
 

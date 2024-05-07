@@ -4,14 +4,14 @@ using SautinSoft.Pdf;
 
 class Program
 {
+    /// <summary>
+    /// Embed files to PDF document.
+    /// </summary>
+    /// <remarks>
+    /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/embed-files-from-stream-to-pdf-document.php
+    /// </remarks>
     static void Main()
     {
-        /// <summary>
-        /// Embed files to PDF document.
-        /// </summary>
-        /// <remarks>
-        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/embed-files-from-stream-to-pdf-document.php
-        /// </remarks>
         // Before starting this example, please get a free 30-day trial key:
         // https://sautinsoft.com/start-for-free/
 

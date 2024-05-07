@@ -8,14 +8,14 @@ namespace Sample
 {
     class Sample
     {
+        /// <summary>
+        /// Merge PDF files.
+        /// </summary>
+        /// <remarks>
+        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/find-tables.php
+        /// </remarks>
         static void Main(string[] args)
         {
-            /// <summary>
-            /// Merge PDF files.
-            /// </summary>
-            /// <remarks>
-            /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/find-tables.php
-            /// </remarks>
             // Before starting this example, please get a free 30-day trial key:
             // https://sautinsoft.com/start-for-free/
 
@@ -26,6 +26,7 @@ namespace Sample
 
             using (var document = PdfDocument.Load(pdfFile))
             {
+                // Find Tables.
                 var tables = document.Pages[0].Content.FindTables();
                 Console.WriteLine(tables.Count() + " tables found!");
             }

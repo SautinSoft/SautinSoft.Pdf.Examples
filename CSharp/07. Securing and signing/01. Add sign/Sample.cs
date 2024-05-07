@@ -11,22 +11,29 @@ namespace Sample
 {
     class Sample
     {
+        /// <summary>
+        /// Fill in PDF interactive forms.
+        /// </summary>
+        /// <remarks>
+        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/add-signature.php
+        /// </remarks>
         static void Main(string[] args)
         {
-            /// <summary>
-            /// Fill in PDF interactive forms.
-            /// </summary>
-            /// <remarks>
-            /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/add-signature.php
-            /// </remarks>
-                // Before starting this example, please get a free 30-day trial key:
-                // https://sautinsoft.com/start-for-free/
+            // Before starting this example, please get a free 30-day trial key:
+            // https://sautinsoft.com/start-for-free/
+
+            // Apply the key here:
+            // PdfDocument.SetLicense("...");
+
             string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");
 
             var document = PdfDocument.Load(pdfFile);
             {
+                // Add a signature field.
                 var sig = document.Form.Fields.AddSignature(document.Pages[0], 10, 10, 250, 50);
+                // Create new Signer.
                 PdfSigner pdfSigner = new PdfSigner(@"..\..\..\sautinsoft.pfx", "123456789");
+                // Configure signer.
                 pdfSigner.Timestamper = new PdfTimestamper(@"https://freetsa.org/tsr");
                 pdfSigner.SignatureFormat = PdfSignatureFormat.CAdES;
                 pdfSigner.SignatureLevel = PdfSignatureLevel.PAdES_B_LTA;
@@ -36,8 +43,9 @@ namespace Sample
                 var im = PdfImage.Load(@"..\..\..\JPEG2.jpg");
                 sig.Appearance.Icon = im;
                 sig.Appearance.TextPlacement = PdfTextPlacement.TextRightOfIcon;
+                // Sign PDF Document.
                 var si = sig.Sign(pdfSigner);
-
+                // Save PDF Document.
                 document.Save();
             }
 

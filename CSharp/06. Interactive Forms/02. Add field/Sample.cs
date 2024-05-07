@@ -31,6 +31,7 @@ namespace Sample
 
                 using (var headerText = new PdfFormattedText())
                 {
+                    // Draw header text.
                     headerText.Font = new PdfFont("Helvetica", 12);
                     headerText.FontWeight = PdfFontWeight.Bold;
                     headerText.MaxTextWidth = pageSize.Width - 100;
@@ -137,7 +138,7 @@ namespace Sample
                     resetField.Appearance.Label = "Reset";
                     resetField.Actions.AddResetForm();
                 }
-
+                // Save PDF Document.
                 document.Save("Form.pdf");
             }
 

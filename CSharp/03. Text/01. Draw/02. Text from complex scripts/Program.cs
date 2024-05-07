@@ -5,14 +5,14 @@ using SautinSoft.Pdf.Content;
 
 class Program
 {
+    /// <summary>
+    /// Create a page tree.
+    /// </summary>
+    /// <remarks>
+    /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/text-from-complex-scripts.php
+    /// </remarks>
     static void Main()
     {
-                /// <summary>
-                /// Create a page tree.
-                /// </summary>
-                /// <remarks>
-                /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/text-from-complex-scripts.php
-                /// </remarks>
         // Before starting this example, please get a free 30-day trial key:
         // https://sautinsoft.com/start-for-free/
 
@@ -21,10 +21,12 @@ class Program
 
         using (var document = new PdfDocument())
         {
+            // Create a new page.
             var page = document.Pages.Add();
 
             using (var formattedText = new PdfFormattedText())
             {
+                // Set up and fill a PdfFormattedText object with multilingual text.
                 formattedText.Language = new PdfLanguage("en-US");
                 formattedText.Font = new PdfFont("Calibri", 12);
 
@@ -40,10 +42,11 @@ class Program
                 formattedText.AppendLine(", which means: ").
                 Append("In the name of God, the All-Merciful, the Especially-Merciful.");
 
+                // Draw this text.
                 page.Content.DrawText(formattedText, new PdfPoint(50, 750));
-
+                // Clear PdfFormattedText object.
                 formattedText.Clear();
-
+                // Set up and fill a PdfFormattedText object with multilingual text.
                 formattedText.Append("An example of Hebrew: ");
 
                 formattedText.Language = new PdfLanguage("he-IL");
@@ -62,11 +65,11 @@ class Program
                 formattedText.Language = new PdfLanguage("en-US");
                 formattedText.Font = new PdfFont("Calibri", 12);
                 formattedText.Append(", which means: Thank you all.");
-
+                // Draw this text.
                 page.Content.DrawText(formattedText, new PdfPoint(50, 650));
-
+                // Clear PdfFormattedText object.
                 formattedText.Clear();
-
+                // Set up and fill a PdfFormattedText object with multilingual text.
                 formattedText.LineHeight = 50;
 
                 formattedText.Append("An example of Thai: ");
@@ -101,10 +104,10 @@ class Program
                 formattedText.Language = new PdfLanguage("osa");
                 formattedText.Font = new PdfFont("Gadugi", 16);
                 formattedText.Append("𐓏𐓘𐓻𐓘𐓻𐓟 𐒻𐓟");
-
+                // Draw this text.
                 page.Content.DrawText(formattedText, new PdfPoint(50, 350));
             }
-
+            // Save PDF Document.
             document.Save("Complex scripts.pdf");
         }
     }

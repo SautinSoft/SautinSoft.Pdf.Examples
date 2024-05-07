@@ -5,14 +5,14 @@ using System.IO;
 
 class Program
 {
+    /// <summary>
+    /// Create PDF Portfolios.
+    /// </summary>
+    /// <remarks>
+    /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/associate-files.php
+    /// </remarks>
     static void Main()
     {
-        /// <summary>
-        /// Create PDF Portfolios.
-        /// </summary>
-        /// <remarks>
-        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/associate-files.php
-        /// </remarks>
         // Before starting this example, please get a free 30-day trial key:
         // https://sautinsoft.com/start-for-free/
 

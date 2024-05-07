@@ -6,21 +6,20 @@ using SautinSoft.Pdf.Content;
 
 class Program
 {
+    /// <summary>
+    /// Create a page tree.
+    /// </summary>
+    /// <remarks>
+    /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/reading-text-from-specific-rectangular-area.php
+    /// </remarks>
     static void Main()
     {
-        /// <summary>
-        /// Create a page tree.
-        /// </summary>
-        /// <remarks>
-        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/reading-text-from-specific-rectangular-area.php
-        /// </remarks>
         // Before starting this example, please get a free 30-day trial key:
         // https://sautinsoft.com/start-for-free/
 
         // Apply the key here:
         // PdfDocument.SetLicense("...");
 
-        PdfDocument.SetLicense("04/30/240HwPRLDLxwsHiK8NbuA52w6t/r1Qdfju5E");
         string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");
         var pageIndex = 0;
         double areaLeft = 200, areaRight = 520, areaBottom = 510, areaTop = 720;
@@ -41,6 +40,7 @@ class Program
                     if (bounds.Left > areaLeft && bounds.Right < areaRight &&
                     bounds.Bottom > areaBottom && bounds.Top < areaTop)
                     {
+                        // Read the text of an element located in a given area
                         Console.Write(textElement.ToString());
                     }
                 }

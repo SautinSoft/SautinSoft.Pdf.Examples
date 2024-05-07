@@ -24,8 +24,10 @@ namespace Sample
 
             string pdfFile = Path.GetFullPath(@"..\..\..\Form.pdf");
 
+            //Load PDF Document with forms.
             using (var document = PdfDocument.Load(pdfFile))
             {
+                // Fill the form fields.
                 document.Form.Fields["FullName"].Value = "Jane Doe";
                 document.Form.Fields["ID"].Value = "0123456789";
                 document.Form.Fields["Gender"].Value = "Female";
@@ -34,6 +36,7 @@ namespace Sample
                 document.Form.Fields["Language"].Value = new string[] { "German", "Italian" };
                 document.Form.Fields["Notes"].Value = "Notes first line\rNotes second line\rNotes third line";
 
+                // Save PDF Document.
                 document.Save("FormFilled.pdf");
             }
 

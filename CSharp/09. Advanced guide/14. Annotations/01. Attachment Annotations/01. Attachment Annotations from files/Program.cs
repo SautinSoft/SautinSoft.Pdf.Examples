@@ -5,14 +5,14 @@ using SautinSoft.Pdf;
 
 class Program
 {
+    /// <summary>
+    /// Watermarks.
+    /// </summary>
+    /// <remarks>
+    /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/attachment-annotations-from-file.php
+    /// </remarks>
     static void Main()
     {
-        /// <summary>
-        /// Watermarks.
-        /// </summary>
-        /// <remarks>
-        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/attachment-annotations-from-file.php
-        /// </remarks>
         // Before starting this example, please get a free 30-day trial key:
         // https://sautinsoft.com/start-for-free/
 

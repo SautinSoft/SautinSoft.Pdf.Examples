@@ -8,14 +8,14 @@ namespace Sample
 {
     class Sample
     {
-        static void Main(string[] args)
-        {
         /// <summary>
         /// Create a page tree.
         /// </summary>
         /// <remarks>
         /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/find.php
         /// </remarks>
+        static void Main(string[] args)
+        {
             // Before starting this example, please get a free 30-day trial key:
             // https://sautinsoft.com/start-for-free/
 
@@ -26,6 +26,7 @@ namespace Sample
 
             var document = PdfDocument.Load(pdfFile);
             {
+                // Find all occurrences of a given text in a pdf file.
                 var text = document.Pages[0].Content.GetText().Find("the");
                 
                 Console.WriteLine("Found " + text.Count() + " elements of this symbol combination.");

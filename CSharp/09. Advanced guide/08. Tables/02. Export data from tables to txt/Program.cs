@@ -11,14 +11,14 @@ namespace Sample
 {
     class Sample
     {
+        /// <summary>
+        /// Merge PDF files.
+        /// </summary>
+        /// <remarks>
+        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/export-data-from-table-to-txt.php
+        /// </remarks>
         static void Main(string[] args)
         {
-            /// <summary>
-            /// Merge PDF files.
-            /// </summary>
-            /// <remarks>
-            /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/export-data-from-table-to-txt.php
-            /// </remarks>
             // Before starting this example, please get a free 30-day trial key:
             // https://sautinsoft.com/start-for-free/
 
@@ -30,10 +30,12 @@ namespace Sample
 
             using (var document = PdfDocument.Load(pdfFile))
             {
+                // Find Tables.
                 var tables = document.Pages[0].Content.FindTables();
 
                 string format = "{0,-20}|{1,-20}", separator = new string('-', 40);
 
+                // Get text from tables.
                 foreach (var table in tables) 
                 {
                     foreach (var row in table.Rows)

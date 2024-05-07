@@ -9,14 +9,14 @@ namespace Sample
 {
     class Sample
     {
-        static void Main(string[] args)
-        {
         /// <summary>
         /// Create a page tree.
         /// </summary>
         /// <remarks>
         /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/embeded-fonts.php
         /// </remarks>
+        static void Main(string[] args)
+        {
             // Before starting this example, please get a free 30-day trial key:
             // https://sautinsoft.com/start-for-free/
 
@@ -48,9 +48,10 @@ namespace Sample
                     formattedText.FontFamily = PdfFonts.GetFontFamilies("..\\..\\..\\Resources").First(ff => ff.Name == "Almonte Woodgrain");
                     formattedText.Append("Hello World 4!");
 
+                    // Draw this text.
                     page.Content.DrawText(formattedText, new PdfPoint(100, 500));
                 }
-
+                // Save PDF Document.
                 document.Save("Private Fonts.pdf");
             }
 

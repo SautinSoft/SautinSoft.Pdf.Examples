@@ -8,14 +8,14 @@ namespace Sample
 {
     class Sample
     {
+        /// <summary>
+        /// Create a page tree.
+        /// </summary>
+        /// <remarks>
+        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/read-text-from-pdf-files.php
+        /// </remarks>
         static void Main(string[] args)
         {
-                            /// <summary>
-                            /// Create a page tree.
-                            /// </summary>
-                            /// <remarks>
-                            /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/read-text-from-pdf-files.php
-                            /// </remarks>
             // Before starting this example, please get a free 30-day trial key:
             // https://sautinsoft.com/start-for-free/
 
@@ -24,10 +24,12 @@ namespace Sample
             
             string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");
 
+            // Load PDF Document.
             using (var document = PdfDocument.Load(pdfFile))
             {
                 foreach (var page in document.Pages)
                 {
+                    // Write text from pdf file to console.
                     Console.WriteLine(page.Content.ToString());
                 }
             }

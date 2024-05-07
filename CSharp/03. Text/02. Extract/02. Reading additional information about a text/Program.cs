@@ -6,14 +6,14 @@ using SautinSoft.Pdf.Content;
 
 class Program
 {
+    /// <summary>
+    /// Create a page tree.
+    /// </summary>
+    /// <remarks>
+    /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/reading-additional-information.php
+    /// </remarks>
     static void Main()
     {
-        /// <summary>
-        /// Create a page tree.
-        /// </summary>
-        /// <remarks>
-        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/reading-additional-information.php
-        /// </remarks>
         // Before starting this example, please get a free 30-day trial key:
         // https://sautinsoft.com/start-for-free/
 

@@ -28,10 +28,12 @@ namespace Sample
 
             using (var document = PdfDocument.Load(pdfFile))
             {
+                // Find Tables.
                 var tables = document.Pages[0].Content.FindTables();
                 int col = -1;
                 double sum = 0;
 
+                // Get text from tables to CSV string.
                 foreach (var table in tables) 
                 {
                     foreach (var row in table.Rows) 

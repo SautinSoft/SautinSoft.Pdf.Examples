@@ -9,15 +9,14 @@ namespace Sample
 {
     class Sample
     {
-
-        static void Main(string[] args)
-        {
         /// <summary>
         /// How to add a go-to action in a PDF document.
         /// </summary>
         /// <remarks>
         /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/add-go-to-action-in-pdf-document.php
         /// </remarks>
+        static void Main(string[] args)
+        {
             // Before starting this example, please get a free 30-day trial key:
             // https://sautinsoft.com/start-for-free/
 
@@ -32,7 +31,9 @@ namespace Sample
             string outFile = "GoToAction.pdf";
             using (var pdf = new PdfDocument())
             {
+                // Add a new page.
                 var firstPage = pdf.Pages.Add();
+                // Add Link annotation.
                 var annotation = firstPage.Annotations.AddLink(10, 700, 300, 100);
                 annotation.Appearance.BorderColor = PdfColor.FromRgb(0, 255 / 255, 0);
 
@@ -44,12 +45,14 @@ namespace Sample
                 text.Append("Click to go to the second page!");
                 firstPage.Content.DrawText(text, new PdfPoint(50, 750));
 
+                // Add a new page.
                 var secondPage = pdf.Pages.Add();
                 text = new PdfFormattedText() { FontSize = 72.0, Color = PdfColors.Gray };
                 text.Append("Page 2");
                 secondPage.Content.DrawText(text, new PdfPoint(150, 400));
+                // Add an action to go to the second page in the Link annotation.
                 var action = annotation.Actions.AddGoToPageView(secondPage, PdfDestinationViewType.FitPage);
-
+                // Save PDF Document.
                 pdf.Save(outFile);
             }
             // Show the result.

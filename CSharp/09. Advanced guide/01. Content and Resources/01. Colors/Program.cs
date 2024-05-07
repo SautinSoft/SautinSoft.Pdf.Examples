@@ -9,14 +9,14 @@ using SautinSoft.Pdf.Text;
 
 class Program
 {
-    static void Main()
-    {
     /// <summary>
     /// How to add a go-to action in a PDF document.
     /// </summary>
     /// <remarks>
     /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/pdf-content-formatting-color.php
     /// </remarks>
+    static void Main()
+    {
         // Before starting this example, please get a free 30-day trial key:
         // https://sautinsoft.com/start-for-free/
 
