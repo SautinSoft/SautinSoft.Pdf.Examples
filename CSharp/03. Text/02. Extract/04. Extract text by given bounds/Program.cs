@@ -39,10 +39,15 @@ class Program
                     new PdfPoint(pageBounds.Right, pageBounds.Top - 120),
                     new PdfPoint(20, pageBounds.Top - 120)),
                 Order = PdfTextOrder.Reading
-            }).ToString();
+            });
 
             // Writing the extracted text
             Console.WriteLine($"Result: {text}");
+            Console.WriteLine($"Text position: " +
+                $"(X: {text.Bounds.Left:0.##}, " +
+                $"Y: {text.Bounds.Bottom:0.##}), " +
+                $"Width: {text.Bounds.Width:0.##}, " +
+                $"Height: {text.Bounds.Height:0.##}.");
             Console.ReadKey();
         }
     }
