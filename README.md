@@ -1,6 +1,6 @@
 ![Nuget](https://img.shields.io/nuget/v/sautinsoft.pdf) ![Nuget](https://img.shields.io/nuget/dt/sautinsoft.pdf)
 # PDF .Net
-![logo_pdf](https://github.com/SautinSoft/SautinSoft.Pdf.Examples/assets/79837963/c33f0a02-eb2c-4831-b7b1-4e776311f744)
+![logo_pdf](https://raw.githubusercontent.com/SautinSoft/SautinSoft.Pdf.Examples/main/logo.png)
 
 .NET library to work with PDF documents. No dependencies.
 
