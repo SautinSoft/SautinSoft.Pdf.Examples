@@ -1,11 +1,19 @@
-![Nuget](https://img.shields.io/nuget/v/sautinsoft.pdf) 
-![Nuget](https://img.shields.io/nuget/dt/sautinsoft.pdf) 
-![GitHub](https://img.shields.io/github/license/SautinSoft/SautinSoft.Pdf.Examples)
-# PDF .Net is a component built to allow developers to create PDF documents, whether simple or complex, on the fly programmatically. 
+![Nuget](https://img.shields.io/nuget/v/sautinsoft.pdf) ![Nuget](https://img.shields.io/nuget/dt/sautinsoft.pdf)
+# PDF .Net
 ![logo_pdf](https://github.com/SautinSoft/SautinSoft.Pdf.Examples/assets/79837963/c33f0a02-eb2c-4831-b7b1-4e776311f744)
 
-PDF .Net allows developers to insert tables, graphs, images, hyperlinks, custom fonts - and more - into PDF documents. 
+.NET library to work with PDF documents. No dependencies.
 
++ Create, Read, Write, Edit.
++ Draw Text and Graphics.
++ Split and Merge.
++ Redact.
++ Convert to Word, Images, PDF/A.
++ Interactive Forms and Annotations.
++ Extract Text, Tables, Images.
++ Pages and Navigation.
++ Password protection and Digital Signatures.
++ Attachments.
 
 ## Quick links
 ===============================
@@ -60,8 +68,8 @@ Code samples right here: https://github.com/SautinSoft/SautinSoft.Pdf.Examples
 
 ## Platforms:
 ===============================
-* .NET 5 and higher
-* .Net Core
+* .NET 4.6.2 - 4.8
+* .NET 6 and up
 
 ## OS Support:
 ===============================
