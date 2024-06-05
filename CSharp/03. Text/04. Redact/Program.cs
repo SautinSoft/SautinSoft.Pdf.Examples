@@ -28,11 +28,19 @@ namespace Sample
             {
                 // Assume we want to redact the word "North".
                 string textToRedact = "North";
+
                 var page = document.Pages[0];
                 var texts = page.Content.GetText().Find(textToRedact);
+                
                 foreach (var text in texts)
                 {
                     text.Redact();
+                    // If you want, draw a green rectangle 
+                    // at the places where was the text.
+                    var bounds = text.Bounds;
+                    var rectangle = page.Content.Elements.AddPath().AddRectangle(new PdfPoint(bounds.Left, bounds.Bottom), new PdfSize(bounds.Width, bounds.Height));
+                    rectangle.Format.Fill.IsApplied = true;
+                    rectangle.Format.Fill.Color = PdfColor.FromRgb(0, 1, 0);
                 }
                 // Save PDF Document.
                 document.Save("out.pdf");
