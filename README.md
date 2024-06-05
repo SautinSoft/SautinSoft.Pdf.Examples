@@ -1,8 +1,8 @@
 ![Nuget](https://img.shields.io/nuget/v/sautinsoft.pdf) ![Nuget](https://img.shields.io/nuget/dt/sautinsoft.pdf)
-# PDF .Net
-![logo_pdf](https://raw.githubusercontent.com/SautinSoft/SautinSoft.Pdf.Examples/main/logo.png)
 
-.NET library to work with PDF documents. No dependencies.
+# .NET SDK to process PDF documents
+
+![logo_pdf](https://raw.githubusercontent.com/SautinSoft/SautinSoft.Pdf.Examples/main/logo.png)
 
 + Create, Read, Write, Edit.
 + Draw Text and Graphics.
@@ -68,7 +68,7 @@ Code samples right here: https://github.com/SautinSoft/SautinSoft.Pdf.Examples
 
 ## Platforms:
 ===============================
-* .NET 4.6.2 - 4.8
+* .NET Framework 4.6.2 - 4.8
 * .NET 6 and up
 
 ## OS Support:
