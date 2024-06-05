@@ -26,23 +26,17 @@ namespace Sample
 
             var document = PdfDocument.Load(pdfFile);
             {
-                // Find all occurrences of a given text in a pdf file.
-                var texts = document.Pages[0].Content.GetText().Find("the");
-                foreach (var tab in texts)
+                // Assume we want to redact the word "North".
+                string textToRedact = "North";
+                var page = document.Pages[0];
+                var texts = page.Content.GetText().Find(textToRedact);
+                foreach (var text in texts)
                 {
-                    var text = new PdfFormattedText();
-                    var bounds = tab.Bounds;
-                    text.Font = tab.Format.Text.Font;
-                    // Remove text.
-                    tab.Redact();
-                    text.Append("-");
-                    // Add new text in this bounds.
-                    document.Pages[0].Content.DrawText(text, new PdfPoint(bounds.Left, bounds.Bottom));
+                    text.Redact();
                 }
                 // Save PDF Document.
                 document.Save("out.pdf");
             }
-
             System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo("out.pdf") { UseShellExecute = true });
         }
     }
