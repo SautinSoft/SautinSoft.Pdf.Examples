@@ -13,7 +13,7 @@ namespace Sample
         /// Create a page tree.
         /// </summary>
         /// <remarks>
-        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/embeded-fonts.php
+        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/embedded-fonts.php
         /// </remarks>
         static void Main(string[] args)
         {
