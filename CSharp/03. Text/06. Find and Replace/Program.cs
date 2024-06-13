@@ -27,7 +27,6 @@ namespace Sample
 
             using (PdfDocument document = PdfDocument.Load(inpFile))
             {
-
                 // Assume we want to find the word "North"
                 // and replace it to the "South".
                 string textFrom = "North";
@@ -50,6 +49,8 @@ namespace Sample
                             using (var formattedText = new PdfFormattedText())
                             {
                                 formattedText.Font = el.Format.Text.Font;
+                                // Set "orange" color
+                                formattedText.Color = PdfColor.FromRgb(1, 0.647, 0);
                                 formattedText.AppendLine(textTo);
                                 page.Content.DrawText(formattedText, new PdfPoint(text.Bounds.Left, text.Bounds.Bottom - text.Bounds.Height));
                             }
