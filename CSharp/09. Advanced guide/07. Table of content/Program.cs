@@ -12,7 +12,7 @@ namespace Sample
     class Sample
     {
         /// <summary>
-        /// Merge PDF files.
+        /// Merge PDF files and create TOC.
         /// </summary>
         /// <remarks>
         /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/table-of-content.php

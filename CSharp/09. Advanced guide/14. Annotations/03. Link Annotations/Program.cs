@@ -7,7 +7,7 @@ using SautinSoft.Pdf.Annotations;
 class Program
 {
     /// <summary>
-    /// Watermarks.
+    /// Text Annotations.
     /// </summary>
     /// <remarks>
     /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/link-annotations.php

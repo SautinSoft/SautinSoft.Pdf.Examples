@@ -9,7 +9,7 @@ namespace Sample
     class Sample
     {
         /// <summary>
-        /// Create a new page.
+        /// Add pages in document.
         /// </summary>
         /// <remarks>
         /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/add-page.php

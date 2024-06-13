@@ -10,7 +10,7 @@ namespace Sample
     class Sample
     {
         /// <summary>
-        /// Create a page tree.
+        /// Find text in the PDF.
         /// </summary>
         /// <remarks>
         /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/find-text.php

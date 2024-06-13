@@ -5,7 +5,7 @@ using System.IO;
 class Program
 {
     /// <summary>
-    /// Fill in PDF interactive forms.
+    /// Password Protection.
     /// </summary>
     /// <remarks>
     /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/password-protection.php

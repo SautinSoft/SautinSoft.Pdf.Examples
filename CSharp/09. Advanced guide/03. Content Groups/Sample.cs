@@ -9,7 +9,7 @@ namespace Sample
     class Sample
     {
         /// <summary>
-        /// How to add a go-to action in a PDF document.
+        /// Work with Content Group.
         /// </summary>
         /// <remarks>
         /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/content-groups.php

@@ -6,7 +6,7 @@ using System.IO;
 class Program
 {
     /// <summary>
-    /// Create PDF Portfolios.
+    /// Associate Files.
     /// </summary>
     /// <remarks>
     /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/associate-files.php

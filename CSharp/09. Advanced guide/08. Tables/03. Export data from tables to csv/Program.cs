@@ -12,7 +12,7 @@ namespace Sample
         static void Main(string[] args)
         {
             /// <summary>
-            /// Merge PDF files.
+            /// Find Tables.
             /// </summary>
             /// <remarks>
             /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/export-data-from-table-to-csv.php

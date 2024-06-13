@@ -10,7 +10,7 @@ namespace Sample
     class Sample
     {
         /// <summary>
-        /// Convert Images to PDF.
+        /// Convert PDF to Jpeg.
         /// </summary>
         /// <remarks>
         /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/convert-pdf-to-images.php

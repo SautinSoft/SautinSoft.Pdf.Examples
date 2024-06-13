@@ -9,7 +9,7 @@ namespace Sample
     class Sample
     {
         /// <summary>
-        /// Merge PDF files.
+        /// Find Tables
         /// </summary>
         /// <remarks>
         /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/find-tables.php

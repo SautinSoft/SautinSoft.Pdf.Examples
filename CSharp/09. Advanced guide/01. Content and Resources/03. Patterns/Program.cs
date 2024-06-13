@@ -9,7 +9,7 @@ using SautinSoft.Pdf.Content.Colors;
 class Program
 {
     /// <summary>
-    /// How to add a go-to action in a PDF document.
+    /// Patterns
     /// </summary>
     /// <remarks>
     /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/pdf-content-formatting-patterns.php

@@ -5,7 +5,7 @@ using System.IO;
 class Program
 {
     /// <summary>
-    /// Merge PDF files.
+    /// Bookmarks.
     /// </summary>
     /// <remarks>
     /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/bookmarks.php

@@ -6,7 +6,7 @@ using SautinSoft.Pdf;
 class Program
 {
     /// <summary>
-    /// Watermarks.
+    /// Annotations.
     /// </summary>
     /// <remarks>
     /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/attachment-annotations-from-file.php

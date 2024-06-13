@@ -8,7 +8,7 @@ using SautinSoft.Pdf.Content.Patterns;
 class Program
 {
     /// <summary>
-    /// How to add a go-to action in a PDF document.
+    /// Shadings.
     /// </summary>
     /// <remarks>
     /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/pdf-content-formatting-shadings.php

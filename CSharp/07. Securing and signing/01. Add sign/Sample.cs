@@ -12,7 +12,7 @@ namespace Sample
     class Sample
     {
         /// <summary>
-        /// Fill in PDF interactive forms.
+        /// Add sign in PDF
         /// </summary>
         /// <remarks>
         /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/add-signature.php

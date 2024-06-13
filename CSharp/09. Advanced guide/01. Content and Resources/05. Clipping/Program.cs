@@ -6,7 +6,7 @@ using SautinSoft.Pdf.Content;
 class Program
 {
     /// <summary>
-    /// How to add a go-to action in a PDF document.
+    /// Clipping.
     /// </summary>
     /// <remarks>
     /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/pdf-content-formatting-clipping.php

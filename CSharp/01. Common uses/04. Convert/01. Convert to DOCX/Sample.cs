@@ -10,7 +10,7 @@ namespace Sample
     class Sample
     {
         /// <summary>
-        /// Convert Images to PDF.
+        /// Convert PDF to DOCX.
         /// </summary>
         /// <remarks>
         /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/convert-pdf-to-docx.php
