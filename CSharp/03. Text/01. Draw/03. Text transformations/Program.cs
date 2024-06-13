@@ -6,7 +6,7 @@ using SautinSoft.Pdf.Content;
 class Program
 {
     /// <summary>
-    /// Create a page tree.
+    /// Text transformation and rotation.
     /// </summary>
     /// <remarks>
     /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/text-transformations.php

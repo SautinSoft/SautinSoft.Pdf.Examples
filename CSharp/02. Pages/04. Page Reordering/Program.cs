@@ -11,7 +11,7 @@ namespace Sample
     {
 
         /// <summary>
-        /// Create a page tree.
+        /// PDF Reordering (Moving pages).
         /// </summary>
         /// <remarks>
         /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/page-reordering.php

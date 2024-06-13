@@ -7,7 +7,7 @@ using SautinSoft.Pdf.Content;
 class Program
 {
     /// <summary>
-    /// Create a page tree.
+    /// Reading text
     /// </summary>
     /// <remarks>
     /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/reading-text-from-specific-rectangular-area.php

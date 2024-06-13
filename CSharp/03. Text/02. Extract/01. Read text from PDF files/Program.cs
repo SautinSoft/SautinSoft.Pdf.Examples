@@ -9,7 +9,7 @@ namespace Sample
     class Sample
     {
         /// <summary>
-        /// Create a page tree.
+        /// Read text from PDF.
         /// </summary>
         /// <remarks>
         /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/read-text-from-pdf-files.php

@@ -9,7 +9,7 @@ namespace Sample
     class Sample
     {
         /// <summary>
-        /// Create a page tree.
+        /// Redact
         /// </summary>
         /// <remarks>
         /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/redact.php

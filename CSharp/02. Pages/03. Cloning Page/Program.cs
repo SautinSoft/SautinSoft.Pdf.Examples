@@ -10,7 +10,7 @@ namespace Sample
     class Sample
     {
         /// <summary>
-        /// Create a page tree.
+        /// Cloning PDF's page.
         /// </summary>
         /// <remarks>
         /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/cloning-page.php

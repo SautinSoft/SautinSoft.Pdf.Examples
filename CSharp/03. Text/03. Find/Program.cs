@@ -3,6 +3,7 @@ using System.IO;
 using SautinSoft;
 using SautinSoft.Pdf;
 using SautinSoft.Pdf.Content;
+using System.Linq;
 
 namespace Sample
 {
@@ -12,7 +13,7 @@ namespace Sample
         /// Create a page tree.
         /// </summary>
         /// <remarks>
-        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/find.php
+        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/find-text.php
         /// </remarks>
         static void Main(string[] args)
         {

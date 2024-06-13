@@ -6,7 +6,7 @@ using SautinSoft.Pdf.Content;
 class Program
 {
     /// <summary>
-    /// Create a page tree.
+    /// How to set Font's settings and text formatting.
     /// </summary>
     /// <remarks>
     /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/text-from-complex-scripts.php

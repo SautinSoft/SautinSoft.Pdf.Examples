@@ -7,7 +7,7 @@ using SautinSoft.Pdf.Content;
 class Program
 {
     /// <summary>
-    /// Create a page tree.
+    /// Reading additional info.
     /// </summary>
     /// <remarks>
     /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/reading-additional-information.php
@@ -20,7 +20,7 @@ class Program
         // Apply the key here:
         // PdfDocument.SetLicense("...");
 
-        string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");
+        string pdfFile = Path.GetFullPath(@"..\..\..\table.pdf");
         // Iterate through all PDF pages and through each page's content elements,
         // and retrieve only the text content elements.
         using (var document = PdfDocument.Load(pdfFile))
