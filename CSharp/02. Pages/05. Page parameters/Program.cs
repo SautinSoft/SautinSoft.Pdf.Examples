@@ -28,15 +28,11 @@ namespace Sample
                 {
                     // Get a page tree root node.
                     var rootNode = document.Pages;
-                    // Set page rotation for a whole set of pages.
-                    rootNode.Rotate = 90;
+                  
 
                     // Create a left page tree node.
                     var childNode = rootNode.Kids.AddPages();
-                    // Overwrite a parent tree node rotation value.
-                    childNode.Rotate = 180;
-                    childNode.SetCropBox(400, 600);
-                    childNode.SetMediaBox(400, 600);
+                    
 
 
                     // Create a first page.
