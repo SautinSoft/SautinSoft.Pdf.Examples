@@ -34,14 +34,14 @@ namespace Sample
                 // Create new Signer.
                 PdfSigner pdfSigner = new PdfSigner(@"..\..\..\Oliver Ekman.pfx", "1234567890");
                 // Configure signer.
-                pdfSigner.Timestamper = new PdfTimestamper(@"https://freetsa.org/tsr");
+                pdfSigner.Timestamper = new PdfTimestamper(@"https://tsa.cesnet.cz:5817/tsa");
                 pdfSigner.SignatureFormat = PdfSignatureFormat.CAdES;
                 pdfSigner.SignatureLevel = PdfSignatureLevel.PAdES_B_LTA;
                 pdfSigner.HashAlgorithm = PdfHashAlgorithm.SHA256;
                 pdfSigner.AuthorPermission = PdfUserAccessPermissions.CommentAndFillForm;
                 pdfSigner.Location = "Test workplace";
                 pdfSigner.Reason = "Test";
-                var im = PdfImage.Load(@"..\..\..\IPEG1.jpg");
+                var im = PdfImage.Load(@"..\..\..\JPEG1.jpg");
                 sig.Appearance.Icon = im;
                 sig.Appearance.TextPlacement = PdfTextPlacement.TextRightOfIcon;
                 // Sign PDF Document.

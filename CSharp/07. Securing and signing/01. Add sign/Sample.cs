@@ -34,7 +34,7 @@ namespace Sample
                 // Create new Signer.
                 PdfSigner pdfSigner = new PdfSigner(@"..\..\..\sautinsoft.pfx", "123456789");
                 // Configure signer.
-                pdfSigner.Timestamper = new PdfTimestamper(@"https://freetsa.org/tsr");
+                pdfSigner.Timestamper = new PdfTimestamper(@"https://tsa.cesnet.cz:5817/tsa");
                 pdfSigner.SignatureFormat = PdfSignatureFormat.CAdES;
                 pdfSigner.SignatureLevel = PdfSignatureLevel.PAdES_B_LTA;
                 pdfSigner.HashAlgorithm = PdfHashAlgorithm.SHA256;

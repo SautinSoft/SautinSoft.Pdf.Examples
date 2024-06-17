@@ -12,8 +12,11 @@ class Program
     /// </remarks>
     static void Main()
     {
-        // This property is necessary only for licensed version.
-        //SautinSoft.Pdf.Serial = "XXXXXXXXXXX";
+            // Before starting this example, please get a free 30-day trial key:
+            // https://sautinsoft.com/start-for-free/
+
+            // Apply the key here:
+            // PdfDocument.SetLicense("...");
 
         using (var document = PdfDocument.Load(Path.GetFullPath(@"..\..\..\simple text.pdf")))
         {

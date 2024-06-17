@@ -24,7 +24,7 @@ namespace Sample
 
             // Apply the key here:
             // PdfDocument.SetLicense("...");
-            PdfDocument.SetLicense("04/30/240HwPRLDLxwsHiK8NbuA52w6t/r1Qdfju5E");
+            
             string[] inpFiles = new string[] {
                         Path.GetFullPath(@"..\..\..\Simple Text.pdf"),
                         Path.GetFullPath(@"..\..\..\Potato Beetle.pdf"),

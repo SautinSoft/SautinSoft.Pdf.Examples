@@ -13,7 +13,7 @@ namespace Sample
         /// Fill in PDF interactive forms.
         /// </summary>
         /// <remarks>
-        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/fltten-interactive-forms.php
+        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/flatten-interactive-forms.php
         /// </remarks>
         static void Main(string[] args)
         {

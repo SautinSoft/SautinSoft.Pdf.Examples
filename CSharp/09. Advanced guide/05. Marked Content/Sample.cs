@@ -33,9 +33,6 @@ namespace Sample
 
                 var markedProperties = markStart.GetEditableProperties().GetDictionary();
 
-                // Set replacement text for a path, as specified in http://www.adobe.com/content/dam/acom/en/devnet/pdf/PDF32000_2008.pdf#page=623
-                markedProperties[PdfName.Create("ActualText")] = PdfString.Create("H");
-
                 // Add the path that is a visual representation of the letter 'H'.
                 var path = page.Content.Elements.AddPath()
                     .BeginSubpath(100, 600).LineTo(100, 800)

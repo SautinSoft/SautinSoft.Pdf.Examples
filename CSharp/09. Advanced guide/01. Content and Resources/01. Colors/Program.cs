@@ -60,7 +60,7 @@ class Program
             }
 
             // Create an Indexed color space
-            // as specified in http://www.adobe.com/content/dam/acom/en/devnet/pdf/PDF32000_2008.pdf#page=164
+            // as specified in Adobe
             // Base color space is DeviceRGB and the created Indexed color space consists of two colors:
             // at index 0: green color (0x00FF00)
             // at index 1: blue color (0x0000FF)
