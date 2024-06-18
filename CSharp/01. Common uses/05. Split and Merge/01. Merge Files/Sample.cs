@@ -1,8 +1,10 @@
 using System;
 using System.IO;
+using System.Collections.Generic;
 using SautinSoft;
 using SautinSoft.Pdf;
 using SautinSoft.Pdf.Content;
+using SautinSoft.Pdf.Facades;
 
 namespace Sample
 {
@@ -22,28 +24,23 @@ namespace Sample
             // Apply the key here:
             // PdfDocument.SetLicense("...");
 
-            MergePdf();
+            MergePdfFiles();
         }
 
-        static void MergePdf()
+        static void MergePdfFiles()
         {
-            string[] inpFiles = new string[] {
-                        Path.GetFullPath(@"..\..\..\Simple Text.pdf"),
-                        Path.GetFullPath(@"..\..\..\Potato Beetle.pdf"),
-                        Path.GetFullPath(@"..\..\..\Text and Graphics.pdf")};
-
+            var inpFiles = new List<string>(Directory.GetFiles(Path.GetFullPath(@"..\..\..\"), "*.pdf"));
             string outFile = Path.GetFullPath(@"Merged.pdf");
 
-            // Create a new PDF document.
-            using (var pdf = new PdfDocument())
-            {
-                // Merge multiple PDF documents the new single PDF.
-                foreach (var inpFile in inpFiles)
-                    using (var source = PdfDocument.Load(inpFile))
-                        pdf.Pages.Kids.AddClone(source.Pages);
+            // Create a PDF merger.
+            var merger = new PdfMerger();
 
-                pdf.Save(outFile);
-            }
+            // Merge multiple PDF documents to the one.
+            foreach (var inpFile in inpFiles)
+                merger.Append(inpFile);
+
+            merger.Save(outFile);
+
             // Show the result.
             System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(outFile) { UseShellExecute = true });
         }
