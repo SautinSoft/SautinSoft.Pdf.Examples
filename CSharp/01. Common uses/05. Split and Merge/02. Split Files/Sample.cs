@@ -6,13 +6,14 @@ using SautinSoft;
 using SautinSoft.Pdf;
 using SautinSoft.Pdf.Content;
 using System.Linq;
+using SautinSoft.Pdf.Facades;
 
 namespace Sample
 {
     class Sample
     {
         /// <summary>
-        /// Split PDF files.
+        /// Split PDF files in C# and .NET.
         /// </summary>
         /// <remarks>
         /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/split-pdf-files.php
@@ -25,26 +26,14 @@ namespace Sample
             // Apply the key here:
             // PdfDocument.SetLicense("...");
 
-            // Open a source PDF file and create a destination ZIP file.
-            using (var source = PdfDocument.Load(Path.GetFullPath(@"..\..\..\simple text.pdf")))
-            using (var archiveStream = File.OpenWrite("Output.zip"))
-            using (var archive = new ZipArchive(archiveStream, ZipArchiveMode.Create))
-            {
-                // Iterate through the PDF pages.
-                for (int pageIndex = 0; pageIndex < source.Pages.Count; pageIndex++)
-                {
-                    // Create a ZIP entry for each source document page.
-                    var entry = archive.CreateEntry($"Page {pageIndex + 1}.pdf");
+            // Split PDF document by pages.
+            // The each page will be saves as a separate PDF file: "Page 0.pdf", "Page 1.pdf" ...
+            // Can work with relative and absolute paths.
+            PdfSplitter.Split(@"..\..\..\005.pdf", PdfLoadOptions.Default, 0,
+                int.MaxValue, (pageInd) => $"Page {pageInd}.pdf");
 
-                    // Save each page as a separate destination document to the ZIP entry.
-                    using (var entryStream = entry.Open())
-                    using (var destination = new PdfDocument())
-                    {
-                        destination.Pages.AddClone(source.Pages[pageIndex]);
-                        destination.Save(entryStream);
-                    }
-                }
-            }
+            // The last parameter is "Func" to generate the output file name.
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(@"Page 0.pdf") { UseShellExecute = true });
         }
     }
 }
