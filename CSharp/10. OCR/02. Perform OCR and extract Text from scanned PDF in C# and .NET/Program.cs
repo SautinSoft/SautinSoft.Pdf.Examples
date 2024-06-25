@@ -36,7 +36,6 @@ namespace OCR
                                     {
                                         var st = page.GetText();
                                         double scale = Math.Min(collection[i].Bounds.Width / page.RegionOfInterest.Width, collection[i].Bounds.Height / page.RegionOfInterest.Height);
-                                        var im = PdfImage.Load(@"C:\Users\nekit\Downloads\image_2024_06_25T07_13_20_689Z.png");
 
                                         using (var iter = page.GetIterator())
                                         {
@@ -58,11 +57,6 @@ namespace OCR
                                                                 Console.WriteLine();
                                                             }
                                                         } while (iter.Next(PageIteratorLevel.TextLine, PageIteratorLevel.Word));
-
-                                                        if (iter.IsAtFinalOf(PageIteratorLevel.Para, PageIteratorLevel.TextLine))
-                                                        {
-                                                            Console.WriteLine();
-                                                        }
                                                     } while (iter.Next(PageIteratorLevel.Para, PageIteratorLevel.TextLine));
                                                 } while (iter.Next(PageIteratorLevel.Block, PageIteratorLevel.Para));
                                             } while (iter.Next(PageIteratorLevel.Block));

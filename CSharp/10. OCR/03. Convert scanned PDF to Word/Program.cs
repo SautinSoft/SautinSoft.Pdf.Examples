@@ -13,7 +13,7 @@ namespace OCR
                 string tesseractLanguages = "eng";
                 string tesseractData = Path.GetFullPath(@".\tessdata");
                 string tempFile = Path.Combine(tesseractData, Path.GetRandomFileName());
-                PdfDocument pdfDocument = PdfDocument.Load(@"..\..\..\Scanned PDF 1.pdf");
+                PdfDocument pdfDocument = PdfDocument.Load(@"..\..\..\Scanned PDF.pdf");
                 PdfFormattedText text = new PdfFormattedText();
 
                 using (Tesseract.TesseractEngine engine = new Tesseract.TesseractEngine(tesseractData, tesseractLanguages, Tesseract.EngineMode.Default))
@@ -46,15 +46,12 @@ namespace OCR
                                                 {
                                                     do
                                                     {
-                                                        do
-                                                        {
-                                                            iter.TryGetBoundingBox(PageIteratorLevel.Word, out Rect liRect);
-                                                            text.FontSize = liRect.Height * scale;
-                                                            text.Opacity = 0;
-                                                            text.Append(iter.GetText(PageIteratorLevel.Word));
-                                                            pdfPage.Content.DrawText(text, new PdfPoint(collection[i].Bounds.Left + liRect.X1 * scale, collection[i].Bounds.Top - liRect.Y1 * scale - text.Height));
-                                                            text.Clear();
-                                                        } while (iter.Next(PageIteratorLevel.TextLine, PageIteratorLevel.Word));
+                                                        iter.TryGetBoundingBox(PageIteratorLevel.TextLine, out Rect liRect);
+                                                        text.FontSize = liRect.Height * scale;
+                                                        //text.Opacity = 0;
+                                                        text.Append(iter.GetText(PageIteratorLevel.TextLine));
+                                                        pdfPage.Content.DrawText(text, new PdfPoint(collection[i].Bounds.Left + liRect.X1 * scale, collection[i].Bounds.Top - liRect.Y1 * scale - text.Height));
+                                                        text.Clear();
                                                     } while (iter.Next(PageIteratorLevel.Para, PageIteratorLevel.TextLine));
                                                 } while (iter.Next(PageIteratorLevel.Block, PageIteratorLevel.Para));
                                             } while (iter.Next(PageIteratorLevel.Block));
@@ -62,10 +59,11 @@ namespace OCR
                                     }
                                 }
                             }
+                            collection[i].Collection.Remove(collection[i]);
                         }
                     }
                 }
-                pdfDocument.Save(@"text.pdf");
+                pdfDocument.Save(@"text.docx");
             }
             catch (Exception e)
             {
