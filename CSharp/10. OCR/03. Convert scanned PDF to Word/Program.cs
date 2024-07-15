@@ -63,7 +63,8 @@ namespace OCR
                         }
                     }
                 }
-                pdfDocument.Save(@"text.docx");
+                pdfDocument.Save(@"Result.docx");
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo("Result.docx") { UseShellExecute = true });
             }
             catch (Exception e)
             {
