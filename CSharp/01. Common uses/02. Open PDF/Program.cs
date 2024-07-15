@@ -13,7 +13,7 @@ namespace Sample
         /// </remarks>
         static void Main(string[] args)
         {
-            // Before starting this example, please get a free 100-day trial key:
+            // Before starting this example, please get a free 30-day trial key:
             // https://sautinsoft.com/start-for-free/
 
             // Apply the key here:
@@ -25,6 +25,10 @@ namespace Sample
             {
                 if (document != null)
                 {
+                    foreach (var page in document.Pages)
+                    {
+                        Console.WriteLine(page.Content.ToString());
+                    }
                     Console.WriteLine("File opened successfully");
                 }
             }
