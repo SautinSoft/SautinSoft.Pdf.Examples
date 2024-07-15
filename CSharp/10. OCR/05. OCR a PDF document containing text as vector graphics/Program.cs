@@ -7,6 +7,12 @@ namespace OCR
 {
     class OCR
     {
+        /// <summary>
+        /// OCR a PDF document containing text as vector graphics
+        /// </summary>
+        /// <remarks>
+        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/ocr-a-pdf-document-containing-text-as-vector-graphics.php
+        /// </remarks>
         static void Main()
         {
             try

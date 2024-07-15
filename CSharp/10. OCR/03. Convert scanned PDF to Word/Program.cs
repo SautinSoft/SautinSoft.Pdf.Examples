@@ -6,6 +6,12 @@ namespace OCR
 {
     class OCR
     {
+        /// <summary>
+        /// Convert scanned PDF to Word
+        /// </summary>
+        /// <remarks>
+        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/convert-scanned-pdf-to-word.php
+        /// </remarks>
         static void Main()
         {
             try

@@ -6,6 +6,12 @@ namespace OCR
 {
     class OCR
     {
+        /// <summary>
+        /// Convert scanned PDF into searchable PDF
+        /// </summary>
+        /// <remarks>
+        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/convert-scanned-pdf-into-searchable-pdf.php
+        /// </remarks>
         static void Main()
         {
             try
