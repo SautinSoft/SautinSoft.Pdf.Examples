@@ -7,6 +7,12 @@ namespace OCR
 {
     class OCR
     {
+        /// <summary>
+        /// Convert scanned PDF with other language to Word
+        /// </summary>
+        /// <remarks>
+        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/convert-scanned-pdf-with-other-language-to-word.php
+        /// </remarks>
         static void Main()
         {
             try
@@ -53,7 +59,6 @@ namespace OCR
                                                 {
                                                     iter.TryGetBoundingBox(PageIteratorLevel.TextLine, out Rect liRect);
                                                     text.FontSize = liRect.Height * scale;
-                                                    //text.Opacity = 0;
                                                     text.Append(iter.GetText(PageIteratorLevel.TextLine));
                                                     pdfPage1.Content.DrawText(text, new PdfPoint(collection[i].Bounds.Left + liRect.X1 * scale, collection[i].Bounds.Top - liRect.Y1 * scale - text.Height));
                                                     text.Clear();

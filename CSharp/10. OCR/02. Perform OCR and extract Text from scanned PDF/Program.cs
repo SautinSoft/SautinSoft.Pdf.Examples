@@ -6,6 +6,12 @@ namespace OCR
 {
     class OCR
     {
+        /// <summary>
+        /// Perform OCR and extract Text from scanned PDF
+        /// </summary>
+        /// <remarks>
+        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/perform-ocr-and-extract-text-from-scanned-pdf.php
+        /// </remarks>
         static void Main()
         {
             try
