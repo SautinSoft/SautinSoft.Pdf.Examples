@@ -34,11 +34,28 @@ namespace Sample
             System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(jsonPath) { UseShellExecute = true });
 
             // 3. Generate filled PDFs based on "Cat-Template.pdf" and JSON data.
-            string resDir = Directory.GetCurrentDirectory();
+            string resDir = Path.GetFullPath(@"..\..\..\result\");
 
             // 3.1. Get data from json.            
             var cats = JsonConvert.DeserializeObject<List<CatBreed>>(json);
-            
+            string pdfFile = Path.GetFullPath(@"..\..\..\Cat-Template.pdf");
+            foreach(var cat in cats)
+            {
+                var document = PdfDocument.Load(pdfFile);
+                var image = PdfImage.Load(cat.PictUrl);
+                
+                var title = cat.Title;
+                document.Form.Fields["TitleTF"].Value = cat.Title;
+                document.Form.Fields["DescriptionTF"].Value = cat.Description;
+                document.Form.Fields["WeightFromTF"].Value = cat.Weight.Item1.ToString();
+                document.Form.Fields["WeightToTF"].Value = cat.Weight.Item2.ToString();
+                
+                document.Pages[0].Content.DrawImage(image,new PdfPoint(400, 500), new PdfSize(200,200));
+                document.Save(Path.Combine(resDir, $"{title}.pdf"));                
+            }
+            // 4. Show the folder with the resulting PDFs.
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(resDir) { UseShellExecute = true });
+
         }
         public static string CreateJsonObject()
         {
@@ -86,7 +103,6 @@ namespace Sample
             json = JsonConvert.SerializeObject(cats, new JsonSerializerSettings() { Formatting = Formatting.Indented});
             return json;
         }
-
     }
     public class CatBreed
     {
