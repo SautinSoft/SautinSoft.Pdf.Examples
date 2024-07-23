@@ -47,8 +47,10 @@ namespace Sample
                             // Get the text formatting, coordinates;
                             // Draw the new text "South".
                             using (var formattedText = new PdfFormattedText())
-                            {
-                                formattedText.Font = el.Format.Text.Font;
+                            {                                
+                                formattedText.Language = new PdfLanguage("en-US");
+                                formattedText.Font = new PdfFont("Calibri", el.Format.Text.Font.Size);                                
+
                                 // Set "orange" color
                                 formattedText.Color = PdfColor.FromRgb(1, 0.647, 0);
                                 formattedText.AppendLine(textTo);
