@@ -20,7 +20,7 @@ namespace OCR
                 string tesseractLanguages = "eng";
                 string tesseractData = Path.GetFullPath(@".\tessdata");
                 string tempFile = Path.Combine(tesseractData, Path.GetRandomFileName());
-                PdfDocument pdfDocument = PdfDocument.Load(@"..\..\..\PDF to Convert.pdf");
+                PdfDocument pdfDocument = PdfDocument.Load(@"..\..\..\Vectorized text.pdf");
                 List<MemoryStream> mss = new List<MemoryStream>();
                 for (int i = 0; i < 3; i++)
                 {
