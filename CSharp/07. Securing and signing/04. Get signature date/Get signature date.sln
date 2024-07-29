@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Get signature date", "Get signature date.csproj", "{DC547E7A-C550-4C6C-A986-E693BC9A94DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Get Signature Date", "Get Signature Date.csproj", "{DC547E7A-C550-4C6C-A986-E693BC9A94DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

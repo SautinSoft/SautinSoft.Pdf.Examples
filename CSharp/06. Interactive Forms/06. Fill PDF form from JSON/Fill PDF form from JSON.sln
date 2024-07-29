@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fill PDF form from JSON", "Fill PDF form from JSON.csproj", "{85B71D32-8612-44A2-A4A5-D03D84D6669F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fill PDF Form from JSON", "Fill PDF Form from JSON.csproj", "{85B71D32-8612-44A2-A4A5-D03D84D6669F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
