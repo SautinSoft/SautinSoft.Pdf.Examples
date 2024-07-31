@@ -23,7 +23,7 @@ namespace Sample
             // PdfDocument.SetLicense("...");
 
             string inpFile = Path.GetFullPath(@"..\..\..\simple text.pdf");            
-            string outFile = Path.ChangeExtension(inpFile, ".res.pdf");
+            string outFile = Path.GetFullPath("Result.pdf");
 
             using (PdfDocument document = PdfDocument.Load(inpFile))
             {
@@ -37,7 +37,7 @@ namespace Sample
                 {
                     // Find the text.
                     var texts = page.Content.GetText().Find(textFrom);
-                    
+
                     // Get the text coordinates and font from 1st Element;
                     // Draw the new text.
                     foreach (var text in texts)
@@ -47,14 +47,24 @@ namespace Sample
                             // Get the text formatting, coordinates;
                             // Draw the new text "South".
                             using (var formattedText = new PdfFormattedText())
-                            {                                
+                            {
                                 formattedText.Language = new PdfLanguage("en-US");
-                                formattedText.Font = new PdfFont("Calibri", el.Format.Text.Font.Size);                                
 
-                                // Set "orange" color
-                                formattedText.Color = PdfColor.FromRgb(1, 0.647, 0);
-                                formattedText.AppendLine(textTo);
-                                page.Content.DrawText(formattedText, new PdfPoint(text.Bounds.Left, text.Bounds.Bottom - text.Bounds.Height));
+                                double fontSize = Math.Min(text.Bounds.Height, el.Format.Text.Font.Size * el.TextTransform.M11);
+
+                                // Case 1: Use a new font, looks different, but contains all characters.
+                                //formattedText.Font = new PdfFont("Helvetica", fontSize);
+
+                                // Case 2: Use the current font, it looks the same, but may contain missing characters.
+                                formattedText.Font = el.Format.Text.Font;
+                                formattedText.FontSize = fontSize;
+
+                                // Set "Red" color
+                                formattedText.Color = PdfColor.FromRgb(1, 0, 0);
+                                formattedText.Append(textTo);
+
+                                page.Content.DrawText(formattedText, new PdfPoint(text.Bounds.Left, text.Bounds.Bottom));
+
                             }
                             break;
                         }
