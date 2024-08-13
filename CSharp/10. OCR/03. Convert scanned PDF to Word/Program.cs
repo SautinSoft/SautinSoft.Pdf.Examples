@@ -1,6 +1,11 @@
 ﻿using SautinSoft.Pdf;
 using SautinSoft.Pdf.Content;
+using SautinSoft.Pdf.Objects;
+using System;
 using Tesseract;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 namespace OCR
 {
