@@ -1,14 +1,8 @@
 using System;
 using System.Collections;
 using System.IO;
-using Org.BouncyCastle.Utilities.Zlib;
 using System.Text.RegularExpressions;
 using System.Text;
-using SautinSoft;
-using SautinSoft.Pdf;
-using SautinSoft.Pdf.Content;
-using SautinSoft.Pdf.Content.Marked;
-using SautinSoft.Pdf.Objects;
 using System.IO.Compression;
 
 namespace Sample
