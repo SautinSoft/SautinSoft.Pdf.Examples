@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35201.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Split PDF by pages without 3rd party component", "Split PDF by pages without 3rd party component.vbproj", "{A9947147-3D5A-4335-B27E-C6290CBB9C41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9947147-3D5A-4335-B27E-C6290CBB9C41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9947147-3D5A-4335-B27E-C6290CBB9C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9947147-3D5A-4335-B27E-C6290CBB9C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9947147-3D5A-4335-B27E-C6290CBB9C41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D326E7B9-9B72-43CF-907F-2D0E89A74B30}
+	EndGlobalSection
+EndGlobal
