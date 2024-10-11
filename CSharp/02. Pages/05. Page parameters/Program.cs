@@ -29,22 +29,17 @@ namespace Sample
                     // Get a page tree root node.
                     var rootNode = document.Pages;
                   
-
                     // Create a left page tree node.
                     var childNode = rootNode.Kids.AddPages();
                     
-
-
                     // Create a first page.
                     var page = childNode.Kids.AddPage();
-                    formattedText.Append("FIRST PAGE");
-                    page.Content.DrawText(formattedText, new PdfPoint(0, 0));
+                    Console.WriteLine("Page rotation: {0}", page.Rotate);
+                    Console.WriteLine("Page size: width = {0}, height = {1}", page.Size.Width, page.Size.Height);
+                    Console.WriteLine("Page cropBox rectangle: ({0}, {1}, {2}, {3})", page.CropBox.Left, page.CropBox.Bottom, page.CropBox.Right, page.CropBox.Top);
+                    Console.WriteLine("Page mediaBox rectangle: ({0}, {1}, {2}, {3})", page.MediaBox.Left, page.MediaBox.Bottom, page.MediaBox.Right, page.MediaBox.Top);
                 }
-
-                document.Save("Add Page.pdf");
             }
-
-            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo("Add Page.pdf") { UseShellExecute = true });
         }
     }
 }

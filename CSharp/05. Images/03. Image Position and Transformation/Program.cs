@@ -30,14 +30,14 @@ class Program
 
             // Set the location of the first image in the top-left corner of the page (with a specified margin).
             double x = margin;
-            double y = page.CropBox.Top - margin - image.Size.Height;
+            double y = page.CropBox.Top - margin - 100;
 
             // Draw the first image.
-            page.Content.DrawImage(image, new PdfPoint(x, y));
+            page.Content.DrawImage(image, new PdfPoint(x, y), new PdfSize(100, 100));
 
             // Set the location of the second image in the top-right corner of the page (with the same margin).
-            x = page.CropBox.Right - margin - image.Size.Width;
-            y = page.CropBox.Top - margin - image.Size.Height;
+            x = page.CropBox.Right - margin - 100;
+            y = page.CropBox.Top - margin - 100;
 
             // Initialize the transformation.
             var transform = PdfMatrix.Identity;
@@ -46,7 +46,7 @@ class Program
             // Use the scale operation to resize the image.
             // NOTE: The unit square of user space, bounded by user coordinates (0, 0) and (1, 1),
             // corresponds to the boundary of the image in the image space.
-            transform.Scale(image.Size.Width, image.Size.Height);
+            transform.Scale(100, 100);
             // Use the scale operation to flip the image horizontally.
             transform.Scale(-1, 1, 0.5, 0);
 
@@ -62,7 +62,7 @@ class Program
             // Use the translate operation to position the image.
             transform.Translate(x, y);
             // Use the scale operation to resize the image.
-            transform.Scale(image.Size.Width, image.Size.Height);
+            transform.Scale(100, 100);
             // Use the scale operation to flip the image vertically.
             transform.Scale(1, -1, 0, 0.5);
 
@@ -70,7 +70,7 @@ class Program
             page.Content.DrawImage(image, transform);
 
             // Set the location of the fourth image in the bottom-right corner of the page (with the same margin).
-            x = page.CropBox.Right - margin - image.Size.Width;
+            x = page.CropBox.Right - margin - 100;
             y = margin;
 
             // Initialize the transformation.
@@ -78,7 +78,7 @@ class Program
             // Use the translate operation to position the image.
             transform.Translate(x, y);
             // Use the scale operation to resize the image.
-            transform.Scale(image.Size.Width, image.Size.Height);
+            transform.Scale(100, 100);
             // Use the scale operation to flip the image horizontally and vertically.
             transform.Scale(-1, -1, 0.5, 0.5);
 
