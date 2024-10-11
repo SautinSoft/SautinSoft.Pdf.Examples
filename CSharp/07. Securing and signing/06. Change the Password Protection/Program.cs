@@ -6,10 +6,10 @@ using SautinSoft.Pdf.Security;
 class Program
 {
     /// <summary>
-    /// Password Protection.
+    /// Change the Password Protection.
     /// </summary>
     /// <remarks>
-    /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/password-protection.php
+    /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/change-password-protection.php
     /// </remarks>
     static void Main()
     {
