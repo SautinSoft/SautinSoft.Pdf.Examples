@@ -23,7 +23,7 @@ Namespace Sample
 			' PdfDocument.SetLicense("...");
 			Dim inpFile As String = "..\..\..\Factur.rtf"
 			Dim outFile As String = "..\..\..\Factur.pdf"
-			Dim xmlInfo As String = File.ReadAllText("..\..\..\Factur\Facture.xml")
+			Dim xmlInfo As String = "..\..\..\Factur\Facture.xml"
 			' Load a PDF document.
 			Using document = PdfDocument.Load(Path.GetFullPath(inpFile))
 				' Create PDF save options.

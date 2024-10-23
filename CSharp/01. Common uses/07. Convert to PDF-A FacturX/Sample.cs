@@ -24,7 +24,7 @@ namespace Sample
             // PdfDocument.SetLicense("...");
             string inpFile = @"..\..\..\Factur.rtf";
             string outFile = @"..\..\..\Factur.pdf";
-            string xmlInfo = File.ReadAllText(@"..\..\..\Factur\Facture.xml");
+            string xmlInfo = @"..\..\..\Factur\Facture.xml";
             // Load a PDF document.
             using (var document = PdfDocument.Load(Path.GetFullPath(inpFile)))
             {
