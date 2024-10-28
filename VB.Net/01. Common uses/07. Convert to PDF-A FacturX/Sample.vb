@@ -21,9 +21,9 @@ Namespace Sample
 
 			' Apply the key here:
 			' PdfDocument.SetLicense("...");
-			Dim inpFile As String = "..\..\..\Factur.rtf"
-			Dim outFile As String = "..\..\..\Factur.pdf"
-			Dim xmlInfo As String = "..\..\..\Factur\Facture.xml"
+			Dim inpFile As String = "..\..\..\Factur\Facture1.pdf"
+			Dim outFile As String = "..\..\..\Factur\FacturX.pdf"
+			Dim xmlInfo As String = "..\..\..\Factur\Facture1.xml"
 			' Load a PDF document.
 			Using document = PdfDocument.Load(Path.GetFullPath(inpFile))
 				' Create PDF save options.

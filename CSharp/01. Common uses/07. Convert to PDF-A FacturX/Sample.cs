@@ -22,9 +22,9 @@ namespace Sample
 
             // Apply the key here:
             // PdfDocument.SetLicense("...");
-            string inpFile = @"..\..\..\Factur.rtf";
-            string outFile = @"..\..\..\Factur.pdf";
-            string xmlInfo = @"..\..\..\Factur\Facture.xml";
+            string inpFile = @"..\..\..\Factur\Facture1.pdf";
+            string outFile = @"..\..\..\Factur\FacturX.pdf";
+            string xmlInfo = @"..\..\..\Factur\Facture1.xml";
             // Load a PDF document.
             using (var document = PdfDocument.Load(Path.GetFullPath(inpFile)))
             {
