@@ -13,7 +13,7 @@ Namespace Sample
 		''' Convert PDF to PDF/A FacturX using C# and .NET.
 		''' </summary>
 		''' <remarks>
-		''' Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/convert-pdf-to-pdfa-using-csharp-and-dotnet.php
+		''' Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/convert-to-pdfa-facturx.php
 		''' </remarks>
 		Shared Sub Main(ByVal args() As String)
 			' Before starting this example, please get a free 100-day trial key:
