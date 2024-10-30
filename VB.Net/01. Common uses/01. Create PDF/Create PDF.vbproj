@@ -1,6 +1,6 @@
   <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-  <PackageId>Document .Net</PackageId>
+  <PackageId>PDF .Net</PackageId>
   <Authors>Max Sautin</Authors>
   <Company>SautinSoft</Company>
   <OutputType>Exe</OutputType>
