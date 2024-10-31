@@ -9,7 +9,7 @@ Imports SautinSoft.Pdf.Content
 Namespace Sample
 	Friend Class Sample
 		''' <remarks>
-		''' Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/open-pdf.php
+		''' Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/create-pdf.php
 		''' </remarks>
 		Shared Sub Main(ByVal args() As String)
             ' Before starting this example, please get a free 100-day trial key:
