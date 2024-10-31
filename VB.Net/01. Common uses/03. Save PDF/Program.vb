@@ -1,33 +1,26 @@
-using System;
-using System.IO;
-using System.Reflection.Metadata;
-using SautinSoft;
-using SautinSoft.Pdf;
-using SautinSoft.Pdf.Content;
+Imports System
+Imports System.IO
+Imports SautinSoft
+Imports SautinSoft.Pdf
 
-namespace Sample
-{
-    class Sample
-    {
-        /// <remarks>
-        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/save-pdf.php
-        /// </remarks>
-        static void Main(string[] args)
-        {
-            // Before starting this example, please get a free 100-day trial key:
-            // https://sautinsoft.com/start-for-free/
+Module Sample
+    ''' <remarks>
+    ''' Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/save-pdf.php
+    ''' </remarks>
+    Sub Main(args As String())
+        ' Before starting this example, please get a free 100-day trial key:
+        ' https://sautinsoft.com/start-for-free/
 
-            // Apply the key here:
-            // PdfDocument.SetLicense("...");
+        ' Apply the key here:
+        ' PdfDocument.SetLicense("...")
 
-            // Load a PDF document.
-            using (var document = PdfDocument.Load(Path.GetFullPath(@"..\..\..\simple text.pdf")))
-            {
-                // Save a PDF document.
-                document.Save("Output.pdf");
-            }
+        ' Load a PDF document.
+        Using document As PdfDocument = PdfDocument.Load(Path.GetFullPath("..\..\..\simple text.pdf"))
+            ' Save a PDF document.
+            document.Save("Output.pdf")
+        End Using
 
-            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(@"Output.pdf") { UseShellExecute = true });
-        }
-    }
-}
+        System.Diagnostics.Process.Start(New System.Diagnostics.ProcessStartInfo("Output.pdf") With {.UseShellExecute = True})
+    End Sub
+End Module
+
