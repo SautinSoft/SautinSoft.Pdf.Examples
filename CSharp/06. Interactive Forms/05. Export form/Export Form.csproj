@@ -1,14 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+  <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+  <PackageId>PDF .Net</PackageId>
+  <Authors>Max Sautin</Authors>
+  <Company>SautinSoft</Company>
+  <OutputType>Exe</OutputType>
+  <LangVersion>latest</LangVersion>
+  <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="SautinSoft.Pdf" Version="2024.8.8" />
-  </ItemGroup>
-
-</Project>
+   <ItemGroup>
+    <PackageReference Include="SautinSoft.Pdf" Version="*" />
+   </ItemGroup>
+  </Project>
