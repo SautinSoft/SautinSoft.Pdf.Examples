@@ -13,7 +13,7 @@ namespace Sample
         /// Find a specific text on page #2 in the PDF and show Bounds, Coordinates, Points.
         /// </summary>
         /// <remarks>
-        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/
+        /// Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/bounds-and-coordinates.php
         /// </remarks>
         static void Main(string[] args)
         {
