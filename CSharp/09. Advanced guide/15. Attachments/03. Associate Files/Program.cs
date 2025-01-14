@@ -57,19 +57,6 @@ class Program
                 markStart.AssociatedFiles.Add(PdfAssociatedFileRelationshipType.Data, Path.GetFullPath(@"..\..\..\ChartData.csv"), null, document.EmbeddedFiles);
             }
 
-            using (var sourceDocument = PdfDocument.Load(Path.GetFullPath(@"..\..\..\Equation.pdf")))
-            {
-                // Import the first page of an 'Equation.pdf' document into a form (PDF equivalent of a vector image).
-                PdfForm form = sourceDocument.Pages[0].ConvertToForm(document);
-
-                var page = document.Pages[1];
-
-                // Add the imported form to the bottom-left corner of the second page.
-                page.Content.Elements.AddForm(form);
-
-                form.AssociatedFiles.Add(PdfAssociatedFileRelationshipType.Supplement, Path.GetFullPath(@"..\..\..\Equation.mml"), "application/mathml+xml", document.EmbeddedFiles);
-            }
-
             document.Save("Associated Files.pdf");
         }
 
