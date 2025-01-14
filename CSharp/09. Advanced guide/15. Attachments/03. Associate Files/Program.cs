@@ -26,10 +26,10 @@ class Program
 
             using (var sourceDocument = PdfDocument.Load(Path.GetFullPath(@"..\..\..\simple text.pdf")))
             {
-                // Import the first page of an 'Invoice.pdf' document.
+                // Import the first page of an 'Simple Text.pdf' document.
                 var page = document.Pages.AddClone(sourceDocument.Pages[0]);
 
-                // Associate the 'Invoice.docx' file to the imported page as a source file and also add it to the document's embedded files.
+                // Associate the 'Simple Text.docx' file to the imported page as a source file and also add it to the document's embedded files.
                 page.AssociatedFiles.Add(PdfAssociatedFileRelationshipType.Source, Path.GetFullPath(@"..\..\..\simple text.docx"), null, document.EmbeddedFiles);
             }
 
@@ -67,9 +67,6 @@ class Program
                 // Add the imported form to the bottom-left corner of the second page.
                 page.Content.Elements.AddForm(form);
 
-                // Associate the 'Equation.mml' to the imported form as a supplement file and also add it to the document's embedded files.
-                // Associated file must specify media type and since GemBox.Pdf doesn't have built-in support for '.mml' file extension,
-                // the media type 'application/mathml+xml' is specified explicitly.
                 form.AssociatedFiles.Add(PdfAssociatedFileRelationshipType.Supplement, Path.GetFullPath(@"..\..\..\Equation.mml"), "application/mathml+xml", document.EmbeddedFiles);
             }
 
