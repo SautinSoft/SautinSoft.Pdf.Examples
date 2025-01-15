@@ -24,10 +24,10 @@ Friend Class Program
 			document.PageMode = PdfPageMode.UseAttachments
 
 			Using sourceDocument = PdfDocument.Load(Path.GetFullPath("..\..\..\simple text.pdf"))
-				' Import the first page of an 'Invoice.pdf' document.
+				' Import the first page of an 'Simple Text.pdf' document.
 				Dim page = document.Pages.AddClone(sourceDocument.Pages(0))
 
-				' Associate the 'Invoice.docx' file to the imported page as a source file and also add it to the document's embedded files.
+				' Associate the 'Simple Text.docx' file to the imported page as a source file and also add it to the document's embedded files.
 				page.AssociatedFiles.Add(PdfAssociatedFileRelationshipType.Source, Path.GetFullPath("..\..\..\simple text.docx"), Nothing, document.EmbeddedFiles)
 			End Using
 
@@ -54,21 +54,6 @@ Friend Class Program
 
 				' Associate another file, the 'ChartData.csv', to the marked content as a data file and also add it to the document's embedded files.
 				markStart.AssociatedFiles.Add(PdfAssociatedFileRelationshipType.Data, Path.GetFullPath("..\..\..\ChartData.csv"), Nothing, document.EmbeddedFiles)
-			End Using
-
-			Using sourceDocument = PdfDocument.Load(Path.GetFullPath("..\..\..\Equation.pdf"))
-				' Import the first page of an 'Equation.pdf' document into a form (PDF equivalent of a vector image).
-				Dim form As PdfForm = sourceDocument.Pages(0).ConvertToForm(document)
-
-				Dim page = document.Pages(1)
-
-				' Add the imported form to the bottom-left corner of the second page.
-				page.Content.Elements.AddForm(form)
-
-				' Associate the 'Equation.mml' to the imported form as a supplement file and also add it to the document's embedded files.
-				' Associated file must specify media type and since GemBox.Pdf doesn't have built-in support for '.mml' file extension,
-				' the media type 'application/mathml+xml' is specified explicitly.
-				form.AssociatedFiles.Add(PdfAssociatedFileRelationshipType.Supplement, Path.GetFullPath("..\..\..\Equation.mml"), "application/mathml+xml", document.EmbeddedFiles)
 			End Using
 
 			document.Save("Associated Files.pdf")
