@@ -9,7 +9,7 @@ namespace Sample
     {
         static void Main(string[] args)
         {
-            // Get your free 100-day key here:   
+            // Before starting this example, please get a free trial key:   
             // https://sautinsoft.com/start-for-free/
 
             ProductActivation();

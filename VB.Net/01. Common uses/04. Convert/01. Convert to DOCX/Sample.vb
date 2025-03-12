@@ -16,7 +16,7 @@ Namespace Sample
 		''' Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/convert-pdf-to-docx.php
 		''' </remarks>
 		Shared Sub Main(ByVal args() As String)
-			' Before starting this example, please get a free license:
+			' Before starting this example, please get a free trial key:
 			' https://sautinsoft.com/start-for-free/
 
 			' Apply the key here:

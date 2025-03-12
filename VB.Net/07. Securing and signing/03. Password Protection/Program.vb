@@ -12,7 +12,7 @@ Friend Class Program
 	''' Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/password-protection.php
 	''' </remarks>
 	Shared Sub Main()
-			' Before starting this example, please get a free 100-day trial key:
+			' Before starting this example, please get a free trial key:
 			' https://sautinsoft.com/start-for-free/
 
 			' Apply the key here:

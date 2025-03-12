@@ -19,7 +19,7 @@ Namespace Sample
 		''' Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/read-interactive-form.php
 		''' </remarks>
 		Shared Sub Main(ByVal args() As String)
-			' Before starting this example, please get a free 100-day trial key:
+			' Before starting this example, please get a free trial key:
 			' https://sautinsoft.com/start-for-free/
 
 			' Apply the key here:

@@ -13,7 +13,7 @@ Friend Class Program
 	''' Details: https://sautinsoft.com/products/pdf/help/net/developer-guide/text-alignment-and-positioning.php
 	''' </remarks>
 	Shared Sub Main()
-		' Before starting this example, please get a free license:
+		' Before starting this example, please get a free trial key:
 		' https://sautinsoft.com/start-for-free/
 
 		' Apply the key here:

@@ -8,7 +8,7 @@ Imports System.Collections.Specialized.BitVector32
 Namespace Sample
 	Friend Class Sample
 		Shared Sub Main(ByVal args() As String)
-			' Get your free 100-day key here:   
+			' Before starting this example, please get a free trial key:
 			' https://sautinsoft.com/start-for-free/
 
 			ProductActivation()
