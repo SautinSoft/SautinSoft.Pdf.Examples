@@ -28,7 +28,7 @@ Namespace Sample
 			Using document = PdfDocument.Load(Path.GetFullPath(inpFile))
 				' Create PDF save options.
 				Dim pdfOptions = New PdfSaveOptions() With {
-					.Version = PdfVersion.FacturX,
+					.Version = PdfVersion.PDF_A_3A,
 					.FacturXXml = File.ReadAllText(xmlInfo)
 				}
 

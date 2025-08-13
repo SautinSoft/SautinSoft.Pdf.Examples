@@ -36,7 +36,7 @@ namespace Sample
                 // and a set of invoice data presented in an XML structured file conformant to EN16931 (syntax CII D16B), complete or not, allowing invoice process automation.
 
                     // Select the desired PDF/A version.
-                    Version = PdfVersion.FacturX,
+                    Version = PdfVersion.PDF_A_3A,
                     FacturXXml = File.ReadAllText(xmlInfo)
                 };
 
