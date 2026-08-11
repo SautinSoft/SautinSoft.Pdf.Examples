@@ -150,13 +150,3 @@ string pdfFile = Path.GetFullPath(@"..\..\..\simple text.pdf");
 
 PDF .Net totally simplifies the development of .NET applications where require to manipulate with PDF documents. Let us say, to provide the method to rotate a page in PDF document, you have add only the reference to the "SautinSoft.Pdf.dll" and write 3-4 C# lines in your application. 
 
-If you need any help with code samples, API, prices or another issues, please use our WebChat, Skype, Email, Phones:
-
-+46 855924509 (Support)
-
-+46 812111486 (Sales)
-
-Skype: sautinsoft.support
-
-Email: support@sautinsoft.com
-
