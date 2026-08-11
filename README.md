@@ -14,6 +14,7 @@
 + Pages and Navigation.
 + Password protection and Digital Signatures.
 + Attachments.
++ Zugferd (Factur-X)
 
 ## Quick links
 ===============================
@@ -28,7 +29,9 @@
 
 + Convert PDF files to image, such as PNG, JPEG, GIF, BMP, TIFF.
 
-+ Extract elements from PDF. 
++ Extract elements from PDF.
+
++ ZUGFeRD is a cross-industry data format for e-invoicing that was developed by the German electronic invoicing forum ( Forum elektronische Rechnung Deutschland, FeRD) with the support of the Federal Ministry for Economic Affairs and Energy.  
 
 + View PDF files in WPF applications. 
 
